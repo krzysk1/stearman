@@ -1,0 +1,34 @@
+<[file][][]
+    <[modelmanager][][]
+        <[pointer_list_tmuniverse][DynamicObjects][]
+
+            // engine
+            <[input_lever][ThrottleInput][60]
+                <[float64][Value][0.46]>
+            >
+            <[servoclassic][ThrottleLever][61]
+                <[float64][Position][0.46]>
+            >
+            <[multibody_joint][PropellerJoint][63]
+                <[float64][InitialVelocity][116.0]>
+            >
+            <[input_lever][Mixture][]
+                <[float64][Value][1.0]>
+            >
+            <[input_discrete][Magnetos][]
+                <[float64][Value][0.0]>
+            >
+
+            // trim
+            <[input_default][PitchTrim][102]
+                <[float64][Value][-0.0369230731294055]>
+            >
+
+            // fuel display
+            <[servoclassic][FuelDisplay][43]
+                <[float64][Position][0.733875913247569]>
+            >
+
+        >
+    >
+>

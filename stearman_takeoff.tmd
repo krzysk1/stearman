@@ -1,0 +1,17 @@
+<[file][][]
+    <[modelmanager][][]
+        <[pointer_list_tmuniverse][DynamicObjects][]
+
+            <[servoclassic][FuelDisplay][43]
+                <[float64][Position][0.794635227218874]>
+            >
+            <[input_lever][Mixture][]
+                <[float64][Value][1.0]>
+            >
+            <[input_discrete][Magnetos][]
+                <[float64][Value][0.0]>
+            >
+
+        >
+    >
+>

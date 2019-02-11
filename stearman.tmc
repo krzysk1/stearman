@@ -1,0 +1,31 @@
+﻿<[file][][]
+    <[object][][]
+        <[int][Version][210]>
+        <[vec32array][ContactSpheres][ (0.777980 1.198600 -1.396140 0.31) (0.777980 -1.198600 -1.396140 0.31) (-4.554100 0.054597 -0.51772 0.1252) ]>
+        <[string8][DisplayName][Boeing/Stearman 75 Kaydet]>
+        <[string8][DescriptionTextEN][The Stearman (Boeing) Model 75 is a biplane used as a military trainer aircraft, of which at least 8,584 were built in the United States during the 1930s and 1940s. Stearman Aircraft became a subsidiary of Boeing in 1934. Widely known as the Stearman, Boeing Stearman or Kaydet, it served as a primary trainer for the USAAF, the USN (as the NS & N2S), and with the RCAF as the Kaydet throughout World War II. In the immediate postwar years they became popular as crop dusters, sports planes, and for aerobatic.#Made by Krzysztof Kaniewski, 3D model by Paolo Matricardi (www.ilmioatelier.com).]>
+        <[string8][DescriptionTextDE][Die Stearman (Boeing) Modell 75 ist ein Doppeldecker als Militärschulflugzeug eingesetzt, von denen mindestens 8,584 wurden in den Vereinigten Staaten in den 1930er und 1940er Jahren gebaut. Stearman Aircraft wurde ein Tochterunternehmen von Boeing im Jahr 1934 weithin als Stearman, Boeing Stearman oder Kaydet bekannt, diente sie als Schulflugzeug für die USAAF, die USN (wie der NS & N2S) und mit der RCAF als Kaydet Sprache in der Welt Krieg. In den ersten Nachkriegsjahren wurden sie beliebt als Spritzflugzeuge, Motormodelle und für Kunstflug.#Hergestellt von Krzysztof Kaniewski 3D-Modell von Paolo Matricardi (www.ilmioatelier.com).]>
+		<[float64][WingSpan][10.2]>
+		<[float64][Mass][1004]>
+		<[float64][MaximumSpeed][93.0]>
+		<[float64][MinimumSpeed][24.0]>
+        <[float64][ApproachSpeed][33.3]>
+        <[float64][CruiseSpeed]  [55.6]>
+		<[tmvector2d][NormalSpeedRange][ 24.0 52.5 ]>
+		<[tmvector2d][CautionSpeedRange][ 52.5 93.0 ]>
+		<[tmvector2d][FlapSpeedRange][ 0.0 0.0 ]>
+        <[float64][MaximumAltitude][4715.0]>
+        <[float64][CruiseAltitude] [1826.0]>
+        <[float64][QSpan][10.2]>
+        <[float64][QMass][1004.0]>
+        <[float64][QSpeed][93.0]>
+        <[float64][QPower][164000.0]>
+        <[float64][QThrust][0.0]>
+        <[float64][QRange][1085000.0]>
+        <[float64][QRatio][0.0]>
+        <[float64][QBuild][1300]>
+        <[float64][QVirgin][1932]>
+		<[bool][Airplane][true]>
+        <[string8][Pilot][pilot_robert]>
+    >
+>
