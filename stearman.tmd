@@ -1363,13 +1363,8 @@
 						dentro_5 dentro_7755_5 dentro_8481_5 dentro_12129_5 dentro_12417_5 
 						dentro_16065_5 dentro_16353_5 dentro_17250_5 dentro_20058_5 dentro_20889_5 
 						dentro_23697_5 motore_10 fuso_19788_8 fuso_20316_8 fuso_21480_8 fuso_22272_8 
-						fuso_22314_8 fuso_29964_8 
+						fuso_22314_8 fuso_29964_8 fuso_glass fuso_glass_ext
 						]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-            >
-            <[rigidbodygraphics][FuselageGlass][]
-                <[string8][GeometryList][ fuso_glass ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
@@ -1524,13 +1519,17 @@
                 <[uint32][PositionID][TailGear.R]>
                 <[uint32][OrientationID][TailGear.Q]>
             >
-            <[hingedbodygraphics][TailWheel][]
+            <[graphics_wheel][TailWheel][]
                 <[string8][GeometryList][ ruotino_801_13 ]>
                 <[uint32][PositionID][TailGear.R]>
                 <[uint32][OrientationID][TailGear.Q]>
                 <[uint32][AngleID][TailWheelHull.RotationAngle]>
+                <[uint32][GroundID][TailWheelHull.Ground]>
+                <[uint32][DeformationID][TailWheelHull.Deformation]>
+                <[float64][Radius][0.1252]>
+                <[float64][RimRadius][0.0508]>				
                 <[tmvector3d][Axis][0.0 1.0 0.0]>
-                <[tmvector3d][Pivot][-4.554100 0.054597 -0.517722]>
+                <[tmvector3d][Pivot][-4.554100 0.0 -0.517722]>
             >
 			
 			// left gear
@@ -1544,11 +1543,15 @@
                 <[uint32][PositionID][LeftGear.R]>
                 <[uint32][OrientationID][LeftGear.Q]>
             >
-            <[rotatingbodygraphics][LeftWheel][]
+            <[graphics_wheel][LeftWheel][]
                 <[string8][GeometryList][ carrello_3252_2 ]>
                 <[uint32][PositionID][LeftGear.R]>
                 <[uint32][OrientationID][LeftGear.Q]>
                 <[uint32][AngleID][LeftWheelHull.RotationAngle]>
+                <[uint32][GroundID][LeftWheelHull.Ground]>
+                <[uint32][DeformationID][LeftWheelHull.Deformation]>
+                <[float64][Radius][0.31]>
+                <[float64][RimRadius][0.158]>			
                 <[tmvector3d][Axis][0.0 0.998630 -0.052336]>
                 <[tmvector3d][Pivot][0.777980 1.198600 -1.396140]>
             >
@@ -1582,11 +1585,15 @@
                 <[uint32][PositionID][RightGear.R]>
                 <[uint32][OrientationID][RightGear.Q]>
             >
-            <[rotatingbodygraphics][RightWheel][]
+            <[graphics_wheel][RightWheel][]
                 <[string8][GeometryList][ carrello_8019_2 ]>
                 <[uint32][PositionID][RightGear.R]>
                 <[uint32][OrientationID][RightGear.Q]>
                 <[uint32][AngleID][RightWheelHull.RotationAngle]>
+                <[uint32][GroundID][RightWheelHull.Ground]>
+                <[uint32][DeformationID][RightWheelHull.Deformation]>
+                <[float64][Radius][0.31]>
+                <[float64][RimRadius][0.158]>					
                 <[tmvector3d][Axis][0.0 0.998630 0.052336]>
                 <[tmvector3d][Pivot][0.777980 -1.198600 -1.396140]>
             >
