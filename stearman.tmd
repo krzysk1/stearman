@@ -8,7 +8,6 @@
                 <[string8][Airspeed][AirspeedIndicator.IndicatedAirspeed]>
                 <[string8][PowerPosition][ThrottleInput.Output]>
                 <[string8][BrakePosition][LeftBrakeInput.Output]>
-            //    <[tmvector3d][LookAtPosition][ 0.3 0.0 -0.6 ]>
             >
             <[event_value][DEV0][]
             >			
