@@ -26,7 +26,7 @@
                 <[tmvector3d][Direction][1.0 0.0 0.0]>
                 <[bool][InCockpit][true]>
                 <[float64][Kf][80.0]>
-                <[float64][Df][3.00]>
+                <[float64][Df][3.0]>
                 <[float64][Kt][0.08]>
                 <[float64][Dt][0.04]>
                 <[string8][Tags][cockpit pilot front]>				
@@ -37,7 +37,7 @@
                 <[tmvector3d][Direction][1.0 0.0 0.0]>
                 <[bool][InCockpit][true]>
                 <[float64][Kf][80.0]>
-                <[float64][Df][3.00]>
+                <[float64][Df][3.0]>
                 <[float64][Kt][0.08]>
                 <[float64][Dt][0.04]>
                 <[string8][Tags][cockpit pilot rear]>				
@@ -631,7 +631,7 @@
                 <[float64array][StationZ]           [ 1.14300 1.20064 1.25828 1.25578 1.28217 1.30857 1.33497 1.36136 1.38776 ]>
                 <[float64array][StationIncidence]   [ 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 ]>
                 <[uint32array][StationFlap]         [ 1 1 1 1 1 1 1 1 0 ]>
-                <[float64array][StationFlapFraction][ 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 0.00]>
+                <[float64array][StationFlapFraction][ 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 0.0]>
                 <[float64][AspectRatioMultiplier][1.0]>
                 <[string8][AirfoilRoot][AirfoilVerticalStabilizer]>
                 <[string8][AirfoilTip][AirfoilVerticalStabilizer]>
@@ -1046,7 +1046,7 @@
                 <[tmvector2d][Range][ -1.0 1.0 ]>				
             >
             <[servoclassic][ServoLeftAileron][]
-                <[string8][Input][AileronInput.Output]>
+                <[string8][Input][AileronTrimmed.Output]>
                 <[float64][Speed][10.0]>
                 <[float64][P0][0.0]>
                 <[float64][P1][0.261799]>
@@ -1057,7 +1057,7 @@
                 <[string8][Input][ServoLeftAileron.Output]>
             >			
             <[servoclassic][ServoRightAileron][]
-                <[string8][Input][AileronInput.Output]>
+                <[string8][Input][AileronTrimmed.Output]>
                 <[float64][Speed][10.0]>
                 <[float64][P0][0.0]>
                 <[float64][P1][-0.261799]>
@@ -1067,9 +1067,23 @@
             <[output_free][ServoRightAileronOutput][]
                 <[string8][Input][ServoRightAileron.Output]>
             >
-            <[input_default][AileronTrimInput][]
+            <[input_default][AileronTrim][]
                 <[string8][Input][Controls.AileronTrim]>
-                <[tmvector2d][Range][ -1.0 1.0 ]>				
+                <[uint][Positions][401]>
+                <[tmvector2d][Range][ -1.0 1.0 ]>
+                <[float64][Value][0.0]>
+                <[float64][Speed][0.1]>
+            >
+            <[mixlinear][AileronTrimmedMix][]
+                <[string8][Input0][AileronInput.Output]>
+                <[string8][Input1][AileronTrim.Output]>
+                <[float64][Weight0][1.0]>
+                <[float64][Weight1][0.2]>
+                <[float64][Offset][0.0]>
+            >
+            <[clamp][AileronTrimmed][]
+                <[string8][Input][AileronTrimmedMix.Output]>
+                <[tmvector2d][Range][ -1.0 1.0 ]>
             >
 			
 			// rudder
@@ -1078,7 +1092,7 @@
                 <[tmvector2d][Range][ -1.0 1.0 ]>				
             >
             <[servoclassic][ServoRudder][]
-                <[string8][Input][RudderInput.Output]>
+                <[string8][Input][RudderTrimmed.Output]>
                 <[float64][Speed][10.0]>
                 <[float64][P0][ 0.0]>
                 <[float64][P1][ -0.523599]>
@@ -1090,7 +1104,20 @@
             >			
             <[input_default][RudderTrimInput][]
                 <[string8][Input][Controls.RudderTrim]>
-                <[tmvector2d][Range][ -1.0 1.0 ]>				
+                <[uint][Positions][101]>
+                <[tmvector2d][Range][ -1.0 1.0 ]>
+                <[float64][Speed][0.3]>
+            >
+            <[mixlinear][RudderTrimmedMix][]
+                <[string8][Input0][RudderInput.Output]>
+                <[string8][Input1][RudderTrimInput.Output]>
+                <[float64][Weight0][1.0]>
+                <[float64][Weight1][0.2]>
+                <[float64][Offset][0.0]>
+            >
+            <[clamp][RudderTrimmed][]
+                <[string8][Input][RudderTrimmedMix.Output]>
+                <[tmvector2d][Range][ -1.0 1.0 ]>
             >
             // primary fight controls end
 			
