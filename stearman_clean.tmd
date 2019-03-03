@@ -28,7 +28,14 @@
             <[servoclassic][FuelDisplay][43]
                 <[float64][Position][0.733875913247569]>
             >
-
+			
+            // lights
+            <[input_switch][NavigationLightSwitch][0]
+                <[float64][Value][1.0]>
+            >
+            <[input_switch][LandingLightSwitch][0]
+                <[float64][Value][0.0]>
+            >
         >
     >
 >

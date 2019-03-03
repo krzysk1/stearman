@@ -37,7 +37,14 @@
             <[servoclassic][TailWheelRelease][]
                 <[float64][Position][0.0]>
             >
-
+			
+            // lights
+            <[input_switch][NavigationLightSwitch][0]
+                <[float64][Value][1.0]>
+            >
+            <[input_switch][LandingLightSwitch][0]
+                <[float64][Value][1.0]>
+            >			
         >
     >
 >
