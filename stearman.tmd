@@ -759,23 +759,25 @@
                 <[float64][Friction][50.0]>
             >
 		
-            // engine
+            // engine Continental R-670-5 
+			// seven-cylinder air-cooled radial engine
+			// 220 hp (164 kW)  at 2,175 rpm
 
             <[engine2][Engine][]
-                <[string8][InputThrottle][ThrottleInput.Output]>
-                <[string8][InputMixture][MixtureInput.Output]>
+                <[string8][InputThrottle][ServoThrottle.Output]>
+                <[string8][InputMixture][MixtureLever.Output]>
                 <[string8][InputLeftMagneto][LeftMagneto.Output]>
                 <[string8][InputRightMagneto][RightMagneto.Output]>				
                 <[string8][RotationSpeed][DriveShaft.RotationSpeed]>
-                <[string8][InputAngle][DriveShaft.OutputAngle]>				
+                <[string8][InputAngle][PropellerJoint.Output]>			
                 <[float64][RotationInertia][2.1776]>
                 <[float64][ThrottleIdle][0.1]>
                 <[string8][AddTorque][DriveShaft.AddTorque]>
                 <[string8][AddInertia][DriveShaft.AddInertia]>
                 <[float64][Friction][150.0]>
-                <[float64][RatedRotationSpeed][160.0]>
+                <[float64][RatedRotationSpeed][220.0]>
                 <[float64][RatedPower][164000]>
-                <[float64][Displacement][0.011]>
+                <[float64][Displacement][0.01095]>
             >
             <[air_flow][CoolingAir][]
                 <[string8][Body][Fuselage]>
@@ -936,7 +938,7 @@
             >
             <[servoclassic][ServoThrottle][]
                 <[string8][Input][ThrottleInput.Output]>
-                <[float64][Speed][1.0]>
+                <[float64][Speed][15.0]>
                 <[float64][P0][0.0]>
                 <[float64][P1][1.0]>
                 <[float64][P2][0.0]>
