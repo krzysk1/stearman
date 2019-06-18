@@ -3,3 +3,5 @@ The Stearman (Boeing) Model 75 is a biplane used as a military trainer aircraft,
 
 Made by Krzysztof Kaniewski, 
 3D model by Paolo Matricardi (www.ilmioatelier.com).
+
+Aircraft Technical Data & Specifications: http://www.airliners.net/aircraft-data/boeing-stearman/85 
