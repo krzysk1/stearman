@@ -1,9 +1,9 @@
 ﻿<[file][][]
     <[modelmanager][][]
         <[pointer_list_tmcontrol][ControlObjects][]
-		
+
 		// Rear pilot cockpit
-		
+
 			//barometer_setting
             <[control_cylinder][PilotPressureSetting][0]
                 <[string8][Type][knob]>
@@ -23,8 +23,8 @@
             <[control_input][MagnetoLeverInput][]
                 <[uint32][InputID][MagnetoLever.Output]>
                 <[float64][Scaling][1.570797]>
-                <[float64][Offset][-1.047198]>				
-  //              <[tmvector2d][Map][(0.0 -1.047198) (1.0 0.523599) ]>				
+                <[float64][Offset][-1.047198]>
+  //              <[tmvector2d][Map][(0.0 -1.047198) (1.0 0.523599) ]>
             >
             <[control_rotation][PilotMagnetosTranslation][]
                 <[string8][Input][MagnetoLeverInput.Output]>
@@ -49,8 +49,8 @@
             <[control_input][ThrottleLeverInput][]
                 <[uint32][InputID][ServoThrottle.Output]>
                 <[float64][Scaling][-0.610866]>
-                <[float64][Offset][1.047198]>				
-//                <[tmvector2d][Map][(0.0 1.047198) (1.0 0.436332)]>				
+                <[float64][Offset][1.047198]>
+//                <[tmvector2d][Map][(0.0 1.047198) (1.0 0.436332)]>
             >
             <[control_rotation][PilotThrottleTranslation][]
                 <[string8][Input][ThrottleLeverInput.Output]>
@@ -83,13 +83,13 @@
                     <[float64][Value][0.01]>
                 >
                 <[vector3_float64][Dimensions][ 0.033 0.018 0.033 ]>
-            >			
+            >
 			// mixture lever
             <[control_input][MixtureLeverInput][]
                 <[uint32][InputID][MixtureLever.Output]>
                 <[float64][Scaling][-0.785398]>
-                <[float64][Offset][1.308997]>					
-//                 <[tmvector2d][Map][(0.0 1.308997) (1.0 0.523599)]>				
+                <[float64][Offset][1.308997]>
+//                 <[tmvector2d][Map][(0.0 1.308997) (1.0 0.523599)]>
             >
             <[control_rotation][PilotMixtureTranslation][]
                 <[string8][Input][MixtureLeverInput.Output]>
@@ -122,13 +122,13 @@
                     <[float64][Value][0.01]>
                 >
                 <[vector3_float64][Dimensions][ 0.033 0.018 0.033 ]>
-            >			
+            >
 			// parking brake
             <[control_input][ParkBrakeInput][2]
                 <[uint32][InputID][ParkingBrakeSwitch.Output]>
                 <[float64][Scaling][-0.611388]>
-                <[float64][Offset][0.622384]>					
-//                <[tmvector2d][Map][(0.0 0.622384) (1.0 0.010996)]>				
+                <[float64][Offset][0.622384]>
+//                <[tmvector2d][Map][(0.0 0.622384) (1.0 0.010996)]>
             >
             <[control_rotation][PilotBrakeHandleRotation][2]
                 <[string8][Input][ParkBrakeInput.Output]>
@@ -171,19 +171,19 @@
                     <[float64][Value][-1.0]>
                 >
                 <[vector3_float64][Dimensions][ 0.032 0.01682  0.034 ]>
-            >			
+            >
 			// carburettor heat lever
             <[control_input][CarburettorHeatLeverMapping][]
                 <[uint32][InputID][CarburettorHeatLever.Output]>
                 <[float64][Scaling][0.610865]>
-                <[float64][Offset][-0.785398]>					
-//                <[tmvector2d][Map][(0.0 -0.785398) (1.0 -0.174533)]>				
+                <[float64][Offset][-0.785398]>
+//                <[tmvector2d][Map][(0.0 -0.785398) (1.0 -0.174533)]>
             >
             <[control_rotation][PilotCarburettorHeatLeverTransform][]
                 <[string8][Input][CarburettorHeatLeverMapping.Output]>
                 <[tmvector3d][Axis][-0.000163 1.0 -0.000005]>
                 <[tmvector3d][Pivot][-0.617580 -0.285126 0.064877]>
-            >			
+            >
             <[control_cylinder][PilotCarburettorHeatLever][14]
                 <[string8][Type][lever]>
                 <[vector3_float64][R0][-0.6913 -0.2740 0.06522]>
@@ -211,7 +211,7 @@
                     <[float64][Value][0.01]>
                 >
                 <[vector3_float64][Dimensions][ 0.0266 0.0266 0.0266 ]>
-            >			
+            >
 			// stick
             <[control_input][ElevatorTravel][]
                 <[uint32][InputID][ServoElevator.Output]>
@@ -266,7 +266,7 @@
                 >
                 <[float64][Radius][0.02]>
                 <[float64][Length][0.05]>
-            >			
+            >
             <[control_cylinder][PilotAvionicsMaster][8]
                 <[string8][Type][switch toggle]>
                 <[vector3_float64][R0][-0.6204 -0.2368 0.1282 ]>
@@ -280,7 +280,7 @@
                 >
                 <[float64][Radius][0.02]>
                 <[float64][Length][0.05]>
-            >	
+            >
             <[control_cylinder][PilotMasterBattery][9]
                 <[string8][Type][switch toggle]>
                 <[vector3_float64][R0][-0.6204 -0.2780  0.1282]>
@@ -294,7 +294,7 @@
                 >
                 <[float64][Radius][0.02]>
                 <[float64][Length][0.05]>
-            >		
+            >
             <[control_cylinder][PilotNavigationLightSwitch][10]
                 <[string8][Type][switch toggle]>
                 <[vector3_float64][R0][ -0.6204 -0.2780 0.2345 ]>
@@ -308,10 +308,10 @@
                 >
                 <[float64][Radius][0.02]>
                 <[float64][Length][0.05]>
-            >	
-			
+            >
+
 		// Front copilot cockpit
-		
+
 			//barometer_setting
             <[control_cylinder][CopilotPressureSetting][11]
                 <[string8][Type][knob]>
@@ -379,7 +379,7 @@
                     <[float64][Value][0.01]>
                 >
                 <[vector3_float64][Dimensions][ 0.033 0.018 0.033 ]>
-            >			
+            >
 			// mixture lever
             <[control_rotation][CopilotMixtureTranslation][]
                 <[string8][Input][MixtureLeverInput.Output]>
@@ -412,7 +412,7 @@
                     <[float64][Value][0.01]>
                 >
                 <[vector3_float64][Dimensions][ 0.033 0.018 0.033 ]>
-            >			
+            >
 			// parking brake
             <[control_rotation][CopilotBrakeHandleRotation][]
                 <[string8][Input][ParkBrakeInput.Output]>
@@ -455,13 +455,13 @@
                     <[float64][Value][-1.0]>
                 >
                 <[vector3_float64][Dimensions][ 0.032 0.01682  0.034 ]>
-            >			
+            >
 			// carburettor heat lever
             <[control_rotation][CopilotCarburettorHeatLeverTransform][]
                 <[string8][Input][CarburettorHeatLeverMapping.Output]>
                 <[tmvector3d][Axis][-0.000163 1.0 -0.000005]>
                 <[tmvector3d][Pivot][0.259880 -0.285126 0.064877]>
-            >			
+            >
             <[control_cylinder][CopilotCarburettorHeatLever][16]
                 <[string8][Type][lever]>
                 <[vector3_float64][R0][0.1862 -0.2740 0.06522]>
@@ -489,7 +489,7 @@
                     <[float64][Value][0.01]>
                 >
                 <[vector3_float64][Dimensions][ 0.0266 0.0266 0.0266 ]>
-            >			
+            >
 			// stick
             <[control_rotation][CopilotElevatorTransform][]
                 <[string8][Input][ElevatorTravel.Output]>
@@ -536,7 +536,7 @@
                 >
                 <[float64][Radius][0.02]>
                 <[float64][Length][0.05]>
-            >			
+            >
             <[control_cylinder][CopilotAvionicsMaster][20]
                 <[string8][Type][switch toggle]>
                 <[vector3_float64][R0][0.2438 -0.2368 0.1282 ]>
@@ -550,7 +550,7 @@
                 >
                 <[float64][Radius][0.02]>
                 <[float64][Length][0.05]>
-            >	
+            >
             <[control_cylinder][CopilotMasterBattery][21]
                 <[string8][Type][switch toggle]>
                 <[vector3_float64][R0][0.2438 -0.2780  0.1282]>
@@ -564,7 +564,7 @@
                 >
                 <[float64][Radius][0.02]>
                 <[float64][Length][0.05]>
-            >		
+            >
             <[control_cylinder][CopilotNavigationLightSwitch][22]
                 <[string8][Type][switch toggle]>
                 <[vector3_float64][R0][ 0.2438 -0.2780 0.2345 ]>
@@ -578,7 +578,7 @@
                 >
                 <[float64][Radius][0.02]>
                 <[float64][Length][0.05]>
-            >					
+            >
         >
     >
 >
