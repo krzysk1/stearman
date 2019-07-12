@@ -275,7 +275,7 @@
                 <[tmvector3d][X0][0.0 0.529919 -0.848048]>
                 <[float64][Kp][72526]>
                 <[float64][Kd][3626]>
-                <[tmvector3d][R0][ 0.780800 1.036320 -1.143000 ]>
+                <[tmvector3d][R0][ 0.780800 0.3683 -0.3133 ]>
                 <[uint32][Type][1]>
             >
             <[collisionhull][CollisionLeftGear][]
@@ -320,7 +320,7 @@
                 <[tmvector3d][X0][0.0 0.529919 0.848048]>
                 <[float64][Kp][72526]>
                 <[float64][Kd][3626]>
-                <[tmvector3d][R0][ 0.780800 -1.036320 -1.143000 ]>
+                <[tmvector3d][R0][ 0.780800 -0.3683 -0.3133 ]>
                 <[uint32][Type][1]>
             >
             <[collisionhull][CollisionRightGear][]
@@ -358,6 +358,21 @@
             // aerodynamics start
 
             // bodies
+            <[aerofuselage][EngineAero][]
+                <[string8][Body][Fuselage]>
+                <[float64][StationX][ 2.37 2.1610 2.094 2.0328 1.955 1.7178 1.6384 ]>
+                <[float64][StationY][ 0.0 0.0 0.0 0.0 0.0 0.0 0.0  ]>
+                <[float64][StationZ][ -0.0032 -0.0032 -0.0032 -0.0032 -0.0032 -0.0032 -0.0032 ]>
+                <[float64][StationWidth][ 0.076 0.076 0.193 0.572 1.06 1.06 0.63 ]>
+                <[float64][StationHeight][ 0.076 0.076 0.193 0.572 1.06 1.06 0.63 ]>
+                <[uint32][StationShape][ 0 0 0 0 0 0 0 ]>
+                <[float64][Cdx][ 0.3 ]>
+                <[float64][Cdy][ 1.0 ]>
+                <[float64][Cdz][ 1.0 ]>
+                <[float64][Cly][ 1.5 ]>
+                <[float64][Clz][ 1.5 ]>
+                <[float64][Cm][ 1.0 ]>
+            >			
             <[aerofuselage][FuselageAero][]
                 <[string8][Body][Fuselage]>
                 <[float64][StationX][ 1.6634 1.6032 1.4813 1.1518 0.1915 -1.3647 -2.5888 -3.1694 -3.4908 -3.7780 -4.0858 -4.4775 -4.5426 ]>
@@ -699,7 +714,7 @@
             <[rigidbody][PropellerBody][]
                 <[float64][Mass][10.0]>
                 <[tmvector3d][InertiaLength][ 0.2 2.5 0.2 ]>
-                <[tmvector3d][R0][2.548640 0.0 0.030480]>
+                <[tmvector3d][R0][2.2114 0.0 0.030480]>
                 <[tmmatrix3d][B0][1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]>
             >
             <[multibody_joint][PropellerJoint][]
@@ -708,7 +723,7 @@
                 <[float64][Kd][0.0]>
                 <[string8][Body0][Fuselage]>
                 <[string8][Body1][PropellerBody]>
-                <[tmvector3d][R0][2.548640 0.0 0.030480]>
+                <[tmvector3d][R0][2.2114 0.0 0.030480]>
                 <[uint32][Type][0]>
                 <[float64][InitialVelocity][72.0]>
             >
@@ -728,7 +743,7 @@
                 <[float64][StallRange][0.25]>
             >
             <[propeller][Propeller][]
-                <[tmvector3d][R0][2.548640 0.0 0.030480]>
+                <[tmvector3d][R0][2.2114 0.0 0.030480]>
                 <[tmvector3d][X0][1.0 0.0 0.0]>
                 <[tmvector3d][Y0][0.0 1.0 0.0]>
                 <[tmvector3d][Z0][0.0 0.0 1.0]>
