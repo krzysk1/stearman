@@ -1,12 +1,12 @@
 ﻿<[file][][]
     <[object][][]
         <[int][Version][210]>
-        <[vec32array][ContactSpheres][ (0.777 1.198 -1.396140 0.31) (0.777 -1.198 -1.396 0.31) (-4.554 0.054 -0.517 0.125) ]>
+        <[vec32array][ContactSpheres][ (0.777 1.198 -1.396 0.311) (0.777 -1.198 -1.396 0.311) (-4.555 0.0 -0.518 0.125) ]>
         <[string8][DisplayName][Boeing/Stearman 75 Kaydet]>
         <[string8][DescriptionTextEN][The Stearman (Boeing) Model 75 is a biplane used as a military trainer aircraft, of which at least 8,584 were built in the United States during the 1930s and 1940s. Stearman Aircraft became a subsidiary of Boeing in 1934. Widely known as the Stearman, Boeing Stearman or Kaydet, it served as a primary trainer for the USAAF, the USN (as the NS & N2S), and with the RCAF as the Kaydet throughout World War II. In the immediate postwar years they became popular as crop dusters, sports planes, and for aerobatic.
-		Made by Krzysztof Kaniewski, original created 3D model by Paolo Matricardi (www.ilmioatelier.com).]>
+Made by Krzysztof Kaniewski, original created 3D model by Paolo Matricardi (www.ilmioatelier.com).]>
         <[string8][DescriptionTextDE][Die Stearman (Boeing) Modell 75 ist ein Doppeldecker als Militärschulflugzeug eingesetzt, von denen mindestens 8,584 wurden in den Vereinigten Staaten in den 1930er und 1940er Jahren gebaut. Stearman Aircraft wurde ein Tochterunternehmen von Boeing im Jahr 1934 weithin als Stearman, Boeing Stearman oder Kaydet bekannt, diente sie als Schulflugzeug für die USAAF, die USN (wie der NS & N2S) und mit der RCAF als Kaydet Sprache in der Welt Krieg. In den ersten Nachkriegsjahren wurden sie beliebt als Spritzflugzeuge, Motormodelle und für Kunstflug.
-		Hergestellt von Krzysztof Kaniewski 3D-Modell von Paolo Matricardi (www.ilmioatelier.com).]>
+Hergestellt von Krzysztof Kaniewski 3D-Modell von Paolo Matricardi (www.ilmioatelier.com).]>
 		<[float64][WingSpan][10.2]>
 		<[float64][Mass][1004]>
 		<[float64][MaximumSpeed][58.5]>
