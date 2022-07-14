@@ -4,7 +4,7 @@ The Stearman Model 75 is a biplane used as a military trainer aircraft, of which
 Original 3D design and original sound files:
 Paolo Matricardi (www.ilmioatelier.com).
 
-Original Aerofly FS 1 aircraft and Aerofly FS 4 adaptation:
+Original Aerofly FS1, Aerofly FS2 and Aerofly FS 4 adaptation:
 Krzysztof Kaniewski krzysk (at) wp.pl
 
 Aircraft Technical Data & Specifications: http://www.airliners.net/aircraft-data/boeing-stearman/85 
