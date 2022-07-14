@@ -1,33 +1,37 @@
 ﻿<[file][][]
     <[object][][]
-        <[int][Version][210]>
+        <[int][Version][220]>
         <[vec32array][ContactSpheres][ (0.777 1.198 -1.396 0.311) (0.777 -1.198 -1.396 0.311) (-4.555 0.0 -0.518 0.125) ]>
+        <[string8][ICAO][ST75]>
         <[string8][DisplayName][Stearman 75 Kaydet]>
-        <[string8][DescriptionTextEN][The Stearman (Boeing) Model 75 is a biplane used as a military trainer aircraft, of which at least 8,584 were built in the United States during the 1930s and 1940s. Stearman Aircraft became a subsidiary of Boeing in 1934. Widely known as the Stearman, Boeing Stearman or Kaydet, it served as a primary trainer for the USAAF, the USN (as the NS & N2S), and with the RCAF as the Kaydet throughout World War II. In the immediate postwar years they became popular as crop dusters, sports planes, and for aerobatic.
-For Aerofly FS2 made by Krzysztof Kaniewski, original 3D model created by Paolo Matricardi (www.ilmioatelier.com).]>
-        <[string8][DescriptionTextDE][Die Stearman (Boeing) Modell 75 ist ein Doppeldecker als Militärschulflugzeug eingesetzt, von denen mindestens 8,584 wurden in den Vereinigten Staaten in den 1930er und 1940er Jahren gebaut. Stearman Aircraft wurde ein Tochterunternehmen von Boeing im Jahr 1934 weithin als Stearman, Boeing Stearman oder Kaydet bekannt, diente sie als Schulflugzeug für die USAAF, die USN (wie der NS & N2S) und mit der RCAF als Kaydet Sprache in der Welt Krieg. In den ersten Nachkriegsjahren wurden sie beliebt als Spritzflugzeuge, Motormodelle und für Kunstflug.
-Hergestellt von Krzysztof Kaniewski 3D-Modell von Paolo Matricardi (www.ilmioatelier.com).]>
+        <[string8][DisplayNameFull][Stearman 75 Kaydet]>
+        <[localized_text_list][Descriptions][]
+            <[localized_text][][]
+                <[string8][Language][en]>
+                <[string8][Text][The Stearman (Boeing) Model 75 is a biplane used as a military trainer aircraft, of which at least 8,584 were built in the United States during the 1930s and 1940s. Stearman Aircraft became a subsidiary of Boeing in 1934. Widely known as the Stearman, Boeing Stearman or Kaydet, it served as a primary trainer for the USAAF, the USN (as the NS & N2S), and with the RCAF as the Kaydet throughout World War II. In the immediate postwar years they became popular as crop dusters, sports planes, and for aerobatic. For Aerofly FS4 made by Krzysztof Kaniewski, original 3D model created by Paolo Matricardi.]>
+			>
+            <[localized_text][][]
+                <[string8][Language][de]>
+                <[string8][Text][Die Stearman (Boeing) Modell 75 ist ein Doppeldecker als Militärschulflugzeug eingesetzt, von denen mindestens 8,584 wurden in den Vereinigten Staaten in den 1930er und 1940er Jahren gebaut. Stearman Aircraft wurde ein Tochterunternehmen von Boeing im Jahr 1934 weithin als Stearman, Boeing Stearman oder Kaydet bekannt, diente sie als Schulflugzeug für die USAAF, die USN (wie der NS & N2S) und mit der RCAF als Kaydet Sprache in der Welt Krieg. In den ersten Nachkriegsjahren wurden sie beliebt als Spritzflugzeuge, Motormodelle und für Kunstflug. Hergestellt von Krzysztof Kaniewski 3D-Modell von Paolo Matricardi.]>
+			>
+        >
 		<[float64][WingSpan][10.2]>
-		<[float64][Mass][1004]>
-		<[float64][MaximumSpeed][58.5]>
-		<[float64][MinimumSpeed][24.0]>
-        <[float64][ApproachSpeed][28.3]>
-        <[float64][CruiseSpeed]  [42.5]>
-		<[tmvector2d][NormalSpeedRange][ 24.0 50.5 ]>
-		<[tmvector2d][CautionSpeedRange][ 50.5 58.5 ]>
-		<[tmvector2d][FlapSpeedRange][ 0.0 0.0 ]>
+		<[float64][MaximumAirspeed][58.5]>
+		<[float64][MinimumAirspeed][24.0]>
+        <[float64][ApproachAirspeed][28.3]>
+        <[float64][CruiseAirspeed]  [42.5]>
+		<[tmvector2d][NormalAirspeedRange][ 24.0 50.5 ]>
+		<[tmvector2d][CautionAirspeedRange][ 50.5 58.5 ]>
+		<[tmvector2d][FlapAirspeedRange][ 0.0 0.0 ]>
         <[float64][MaximumAltitude][4024 .0]>
         <[float64][CruiseAltitude] [1826.0]>
-        <[float64][QSpan][10.2]>
-        <[float64][QMass][1200 .0]>
-        <[float64][QSpeed][58.5]>
-        <[float64][QPower][164000.0]>
-        <[float64][QThrust][0.0]>
-        <[float64][QRange][1085000.0]>
-        <[float64][QRatio][0.0]>
-        <[float64][QBuild][10620]>
-        <[float64][QVirgin][1932]>
-		<[bool][Airplane][true]>
+        <[float64][MaximumTakeoffMass][1200 .0]>
+        <[float64][EnginePower][164000.0]>
+        <[float64][MaximumRange][1085000.0]>
+        <[uint][UnitsBuilt][10620]>
+        <[uint][EngineCount][1]>
+        <[uint][Year][1932]>
+        <[string8][Tags][ historical piston airplane ]>
         <[string8][Pilot][]>
     >
 >
