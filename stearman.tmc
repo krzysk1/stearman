@@ -17,21 +17,23 @@
         >
 		<[float64][WingSpan][10.2]>
 		<[float64][MaximumAirspeed][58.5]>
+		<[float64][MaximumSpeed][58.5]>		
 		<[float64][MinimumAirspeed][24.0]>
         <[float64][ApproachAirspeed][28.3]>
-        <[float64][CruiseAirspeed]  [42.5]>
+        <[float64][CruiseAirspeed][42.5]>
+        <[float64][CruiseSpeed][58.5]>		
 		<[tmvector2d][NormalAirspeedRange][ 24.0 50.5 ]>
 		<[tmvector2d][CautionAirspeedRange][ 50.5 58.5 ]>
 		<[tmvector2d][FlapAirspeedRange][ 0.0 0.0 ]>
         <[float64][MaximumAltitude][4024 .0]>
-        <[float64][CruiseAltitude] [1826.0]>
+        <[float64][CruiseAltitude][1826.0]>
         <[float64][MaximumTakeoffMass][1200 .0]>
         <[float64][EnginePower][164000.0]>
         <[float64][MaximumRange][1085000.0]>
         <[uint][UnitsBuilt][10620]>
         <[uint][EngineCount][1]>
         <[uint][Year][1932]>
-        <[string8][Tags][ historical piston airplane ]>
+        <[string8][Tags][ historical piston airplane general_aviation ]>
         <[string8][Pilot][]>
     >
 >

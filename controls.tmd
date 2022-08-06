@@ -39,7 +39,7 @@
                 <[float64][StepDistance][0.02]>
                 <[string8][InputTransform][PilotMagnetosTranslation.Output]>
                 <[control_message][OnStep][]
-                    <[string8][Message][Controls.Magnetos]>
+                    <[string8][Message][Controls.Magnetos1]>
                     <[string8][Qualifiers][step]>
                     <[float64][Value][-1.0]>
                 >
@@ -260,7 +260,7 @@
                 <[matrix3_float64][B0][1 0 0  0 1 0  0 0 1]>
                 <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
                 <[control_message][OnPush][]
-                    <[string8][Message][Controls.EngineStarter]>
+                    <[string8][Message][Controls.Starter1]>
                     <[string8][Qualifiers][event]>
                     <[float64][Value][1.0]>
                 >
@@ -341,7 +341,7 @@
                 <[float64][StepDistance][0.02]>
                 <[string8][InputTransform][CopilotMagnetosTranslation.Output]>
                 <[control_message][OnStep][]
-                    <[string8][Message][Controls.Magnetos]>
+                    <[string8][Message][Controls.Magnetos1]>
                     <[string8][Qualifiers][step]>
                     <[float64][Value][-1.0]>
                 >
@@ -530,7 +530,7 @@
                 <[matrix3_float64][B0][1 0 0  0 1 0  0 0 1]>
                 <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
                 <[control_message][OnPush][]
-                    <[string8][Message][Controls.EngineStarter]>
+                    <[string8][Message][Controls.Starter1]>
                     <[string8][Qualifiers][event]>
                     <[float64][Value][1.0]>
                 >
