@@ -1546,41 +1546,107 @@
             <[graphics_input][NavigationLights][]
                 <[uint32][InputID][NavigationLightOffSwitch.Output]>
             >
-            <[graphics_pointlight][airplane_nav_left][]
+            <[graphics_pointlight][LeftWingTipLight][]
                 <[uint32][PositionID][UpperWing.R]>
                 <[uint32][OrientationID][UpperWing.Q]>
                 <[tmvector3d][R0][0.48 5.145 1.12]>
                 <[tmvector3d][X0][ 0.7 0.7 0.0 ]>
                 <[tmvector3d][Color][ 1.0 0.3 0.1 1.0 ]>
-                <[float64][Brightness][ 5.0 ]>
+                <[float64][Brightness][ 10.0 ]>
                 <[string8][InputModulation][NavigationLights.Output]>
             >
-            <[graphics_pointlight][airplane_nav_right_0][]
+            <[graphics_conelight][LeftWingTipLightCone][]
+                <[uint32][PositionID][UpperWing.R]>
+                <[uint32][OrientationID][UpperWing.Q]>
+                <[tmvector3d][R0][0.48 5.145 1.12]>
+                <[tmvector3d][X0][ 0.7 0.7 0.0 ]>
+                <[tmvector3d][Color][ 1.0 0.3 0.1 1.0 ]>
+                <[float64][Brightness][ 0.1 ]>
+                <[float64][ConeCenter][1.0]>
+                <[float64][ConeCutoff][-0.91]>
+                <[string8][InputModulation][NavigationLights.Output]>
+                <[float64][Size][50.0]>
+                <[float64][Falloff][8.0]>
+            >
+            <[graphics_conelight][LeftWingTipLightGlow][]
+                <[uint32][PositionID][UpperWing.R]>
+                <[uint32][OrientationID][UpperWing.Q]>
+                <[tmvector3d][R0][0.48 5.15 1.12]>
+                <[tmvector3d][X0][ 1.0 0.1 0.0 ]>
+                <[tmvector3d][Color][ 1.0 0.3 0.1 1.0 ]>
+                <[float64][Brightness][ 0.5 ]>
+                <[float64][ConeCenter][-0.89]>
+                <[float64][ConeCutoff][-0.99]>
+                <[string8][InputModulation][NavigationLights.Output]>
+                <[float64][Size][1.0]>
+                <[float64][Falloff][8.0]>
+            >			
+            <[graphics_pointlight][RightWingTipLight][]
                 <[uint32][PositionID][UpperWing.R]>
                 <[uint32][OrientationID][UpperWing.Q]>
                 <[tmvector3d][R0][0.48 -5.145 1.12]>
                 <[tmvector3d][X0][ 0.7 -0.7 0.0 ]>
                 <[tmvector3d][Color][ 0.2 0.7 0.1 1.0 ]>
-                <[float64][Brightness][ 5.0 ]>
+                <[float64][Brightness][ 10.0 ]>
                 <[string8][InputModulation][NavigationLights.Output]>
             >
-
+            <[graphics_conelight][RightWingTipLightCone][]
+                <[uint32][PositionID][UpperWing.R]>
+                <[uint32][OrientationID][UpperWing.Q]>
+                <[tmvector3d][R0][0.48 -5.145 1.12]>
+                <[tmvector3d][X0][ 0.7 -0.7 0.0 ]>
+                <[tmvector3d][Color][ 0.2 0.7 0.1 1.0 ]>
+                <[float64][Brightness][ 0.1 ]>
+                <[float64][ConeCenter][1.0]>
+                <[float64][ConeCutoff][0.0]>
+                <[string8][InputModulation][NavigationLights.Output]>
+                <[float64][Size][50.0]>
+                <[float64][Falloff][8.0]>
+            >
+			
 			// landing lights
             <[graphics_input][LandingLights][]
                 <[uint32][InputID][LandingLights.Output]>
             >
-            <[graphics_pointlight][airplane_landing_0][]
+            <[graphics_pointlight][LandingLight][]
                 <[uint32][PositionID][UpperWing.R]>
                 <[uint32][OrientationID][UpperWing.Q]>
                 <[tmvector3d][R0][0.242 0.216 0.953]>
-                <[float64][ConeCenter][0.9]>
-                <[float64][ConeCutoff][0.2]>
+                <[tmvector3d][X0][ 1.0 0.0 0.0 ]>
+                <[float64][ConeCenter][1.0]>
+                <[float64][ConeCutoff][0.75]>
                 <[float64][Size][0.059]>
-                <[tmvector3d][Color][ 1.0 0.9 0.8 1.0 ]>
-                <[float64][Brightness][15.0]>
+                <[tmvector3d][Color][ 1.0 0.8 0.7 1.0 ]>
+                <[float64][Brightness][70.0]>
                 <[string8][InputModulation][LandingLights.Output]>
             >
-
+            <[graphics_conelight][LandingLightCone][]
+                <[uint32][PositionID][UpperWing.R]>
+                <[uint32][OrientationID][UpperWing.Q]>
+                <[tmvector3d][R0][0.242 0.216 0.953]>
+                <[tmvector3d][X0][ 1.0 0.0 -0.1 ]>
+                <[tmvector3d][Color][ 1.0 0.8 0.6 1.0 ]>
+                <[float64][Brightness][20.0]>
+                <[float64][ConeCenter][1.0]>
+                <[float64][ConeCutoff][0.9]>
+                <[string8][InputModulation][LandingLights.Output]>
+                <[float64][Size][400.0]>
+                <[float64][Falloff][8.0]>
+            >
+            <[graphics_conelight][LandingLightWideCone][]
+                <[uint32][PositionID][UpperWing.R]>
+                <[uint32][OrientationID][UpperWing.Q]>
+                <[tmvector3d][R0][0.242 0.216 0.953]>
+                <[tmvector3d][X0][ 1.0 0.0 -0.1 ]>
+                <[tmvector3d][Color][ 1.0 0.8 0.6 1.0 ]>
+                <[float64][Brightness][4.0]>
+                <[float64][ConeCenter][1.0]>
+                <[float64][ConeCutoff][-0.8]>
+                <[string8][InputModulation][LandingLights.Output]>
+                <[float64][Size][40.0]>
+                <[float64][Falloff][8.0]>
+            >
+			
 			//rudder
             <[hingedbodygraphics][Rudder][]
                 <[string8][GeometryList][ Timone19 Timone363019 ]>
@@ -1603,17 +1669,33 @@
                 <[tmvector3d][Axis][ 0.000468 -2e-06 1.0 ]>
                 <[tmvector3d][Pivot][-4.476075 -0.000007 0.691939]>
             >
-            <[graphics_pointlight][airplane_nav_tail_19][]
+            <[graphics_pointlight][TailLight][]
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[tmvector3d][R0][-4.99 0.0 0.99]>
-                <[tmvector3d][X0][ -0.7 0.0 0.0 ]>
-                <[tmvector3d][Color][ 1.0 0.9 0.8 1.0 ]>
-                <[float64][Brightness][ 3.0 ]>
+                <[tmvector3d][X0][ -1.0 0.0 0.0 ]>
+                <[tmvector3d][Color][ 1.0 1.0 1.0 1.0 ]>
+                <[float64][Brightness][6.0]>
+                <[float64][ConeCenter][0.2]>
+                <[float64][ConeCutoff][-0.2]>
                 <[string8][InputModulation][NavigationLights.Output]>
                 <[string8][InputTransform][timoneRotate_783.Output]>
             >
-
+            <[graphics_conelight][TailLightCone][]
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[tmvector3d][R0][-4.99 0.0 0.99]>
+                <[tmvector3d][X0][ -1.0 0.0 -0.2 ]>
+                <[tmvector3d][Color][ 1.0 0.8 0.6 1.0 ]>
+                <[float64][Brightness][ 0.1 ]>
+                <[float64][ConeCenter][0.5]>
+                <[float64][ConeCutoff][-0.5]>
+                <[string8][InputModulation][NavigationLights.Output]>
+                <[string8][InputTransform][timoneRotate_783.Output]>
+                <[float64][Size][50.0]>
+                <[float64][Falloff][8.0]>
+            >
+			
 			// tail gear
             <[rigidbodygraphics][ruotino_156_13][]
                 <[string8][GeometryList][ Ruotino13 Ruotino15613 ]>
