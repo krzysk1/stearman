@@ -3,7 +3,7 @@
         <[int][Version][220]>
         <[vec32array][ContactSpheres][ (0.777 1.198 -1.396 0.311) (0.777 -1.198 -1.396 0.311) (-4.555 0.0 -0.518 0.125) ]>
         <[string8][ICAO][ST75]>
-        <[string8][DisplayName][Stearman 75 Kaydet]>
+        <[string8][DisplayName][Stearman]>
         <[string8][DisplayNameFull][Stearman 75 Kaydet]>
         <[localized_text_list][Descriptions][]
             <[localized_text][][]
