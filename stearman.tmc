@@ -3,7 +3,7 @@
         <[int][Version][220]>
         <[vec32array][ContactSpheres][ (0.777 1.198 -1.396 0.311) (0.777 -1.198 -1.396 0.311) (-4.555 0.0 -0.518 0.125) ]>
         <[string8][ICAO][ST75]>
-        <[string8][DisplayName][Stearman]>
+        <[string8][DisplayName][Stearman 75]>
         <[string8][DisplayNameFull][Stearman 75 Kaydet]>
         <[localized_text_list][Descriptions][]
             <[localized_text][][]
@@ -17,11 +17,11 @@
         >
 		<[float64][WingSpan][10.2]>
 		<[float64][MaximumAirspeed][58.5]>
-		<[float64][MaximumSpeed][58.5]>		
+		<[float64][MaximumSpeed][58.5]>
 		<[float64][MinimumAirspeed][24.0]>
         <[float64][ApproachAirspeed][28.3]>
         <[float64][CruiseAirspeed][42.5]>
-        <[float64][CruiseSpeed][58.5]>		
+        <[float64][CruiseSpeed][58.5]>
 		<[tmvector2d][NormalAirspeedRange][ 24.0 50.5 ]>
 		<[tmvector2d][CautionAirspeedRange][ 50.5 58.5 ]>
 		<[tmvector2d][FlapAirspeedRange][ 0.0 0.0 ]>
@@ -33,7 +33,7 @@
         <[uint][UnitsBuilt][10620]>
         <[uint][EngineCount][1]>
         <[uint][Year][1932]>
-        <[string8][Tags][ historical piston airplane general_aviation ]>
+        <[string8][Tags][ historical piston airplane trainer general_aviation gear taildragger ]>
         <[string8][Pilot][]>
     >
 >
