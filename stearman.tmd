@@ -149,7 +149,7 @@
                 <[float64][D][28560]>
                 <[float64][StaticFrictionCoefficient][2.0]>
                 <[float64][KineticFrictionCoefficient][0.7]>
-                <[bool][Blade][false]>
+                <[bool][InstantCrash][true]>
             >
             <[collisionhull][CollisionUpperWing][]
                 <[string8][Body][UpperWing]>
@@ -158,7 +158,7 @@
                 <[float64][D][7530]>
                 <[float64][StaticFrictionCoefficient][2.0]>
                 <[float64][KineticFrictionCoefficient][0.7]>
-                <[bool][Blade][false]>
+                <[bool][InstantCrash][true]>
             >
             <[collisionhull][CollisionLeftLowerWing][]
                 <[string8][Body][LeftLowerWing]>
@@ -167,7 +167,6 @@
                 <[float64][D][7530]>
                 <[float64][StaticFrictionCoefficient][2.0]>
                 <[float64][KineticFrictionCoefficient][0.7]>
-                <[bool][Blade][false]>
             >
             <[collisionhull][CollisionRightLowerWing][]
                 <[string8][Body][RightLowerWing]>
@@ -176,7 +175,6 @@
                 <[float64][D][7530]>
                 <[float64][StaticFrictionCoefficient][2.0]>
                 <[float64][KineticFrictionCoefficient][0.7]>
-                <[bool][Blade][false]>
             >
 
             // tail gear
@@ -203,7 +201,6 @@
                 // <[float64][D][60270]>
                 // <[float64][StaticFrictionCoefficient][2.0]>
                 // <[float64][KineticFrictionCoefficient][0.7]>
-                // <[bool][Blade][false]>
             // >
             <[input_binary][TailWheelReleaseInput][]
                 <[string8][Message][Controls.TailWheelRelease]>
@@ -270,7 +267,6 @@
                 <[float64][D][60270]>
                 <[float64][StaticFrictionCoefficient][2.0]>
                 <[float64][KineticFrictionCoefficient][0.7]>
-                <[bool][Blade][false]>
             >
             <[wheel][LeftWheelHull][]
                 <[float64][K][17640]>
@@ -315,7 +311,6 @@
                 <[float64][D][60270]>
                 <[float64][StaticFrictionCoefficient][2.0]>
                 <[float64][KineticFrictionCoefficient][0.7]>
-                <[bool][Blade][false]>
             >
             <[wheel][RightWheelHull][]
                 <[float64][K][176400]>
@@ -2636,6 +2631,7 @@
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][eng_strt.wav]>
+                <[tmvector3d][R0][2.0 0.0 0.0]>			   
             >
 
             // engine loop rpm_eng 2500.0
@@ -2664,13 +2660,15 @@
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][engn1.wav]>
+                <[tmvector3d][R0][2.0 0.0 0.0]>			   
             >
             <[soundloop][RPMRunLoop][]
                 <[string8][InputVolume][RPMVolumeRun.Output]>
                 <[string8][InputPitch][RPMPitchRun.Output]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][VelocityID][Fuselage.V]>
-               <[string8][SoundFile][engn2.wav]>
+                <[string8][SoundFile][engn2.wav]>
+                <[tmvector3d][R0][2.0 0.0 0.0]>			   
             >
 
             // wheels

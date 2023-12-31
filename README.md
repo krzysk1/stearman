@@ -7,7 +7,20 @@ Paolo Matricardi (www.ilmioatelier.com).
 Aerofly FS1, Aerofly FS2 and Aerofly FS 4 adaptation:
 Krzysztof Kaniewski
 
-Aircraft Technical Data & Specifications: http://www.airliners.net/aircraft-data/boeing-stearman/85 
+ Some features may not work as intended and this aircraft could crash your Aerofly FS4. 
+ Use it at your own risk!
 
-Tip: 
+# Installation
+
+1. Unzip file and move the folder "stearman" into the C:\Users\~\Documents\Aerofly FS 4\aircraft folder.
+
+# Uninstall
+
+1. Delete the folder "stearman".
+
+# Tip 
 To open engine door switch off magneto on the ground (air speed must be zero)
+
+# Resources
+
+Aircraft Technical Data & Specifications: http://www.airliners.net/aircraft-data/boeing-stearman/85 
