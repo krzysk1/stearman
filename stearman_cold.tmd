@@ -8,6 +8,9 @@
             <[input_lever][Mixture][]
                 <[float64][Value][0.0]>
             >
+            <[multibody_joint][PropellerJoint][]
+                <[float64][Velocity][0.0]>
+            >			
             <[input_discrete][Magnetos][]
 			    <[float64][Value][0.0]>
             >
