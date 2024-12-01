@@ -16,9 +16,15 @@
                 <[float64][Value][1.0]>
             >
             <[input_discrete][Magnetos][]
+                <[float64][Value][3.0]>
+            >
+            <[input_switch][ParkingBrakeSwitch][]
                 <[float64][Value][0.0]>
             >
-
+            <[input_switch][MasterBatterySwitch][]
+                <[float64][Value][1.0]>
+            >
+			
             // trim
             <[input_default][PitchTrim][102]
                 <[float64][Value][-0.9]>
@@ -37,14 +43,14 @@
             <[servoclassic][TailWheelRelease][]
                 <[float64][Position][0.0]>
             >
-			
+
             // lights
             <[input_switch][NavigationLightSwitch][0]
                 <[float64][Value][1.0]>
             >
             <[input_switch][LandingLightSwitch][0]
                 <[float64][Value][1.0]>
-            >			
+            >
         >
     >
 >

@@ -9,6 +9,16 @@
                 <[float64][Value][1.0]>
             >
             <[input_discrete][Magnetos][]
+                <[float64][Value][3.0]>
+            >
+            <[input_switch][ParkingBrakeSwitch][]
+                <[float64][Value][0.0]>
+            >
+            <[input_switch][MasterBatterySwitch][]
+                <[float64][Value][1.0]>
+            >
+            <[input_binary][TailWheelReleaseInput][]
+                <[string8][Message][Controls.TailWheelRelease]>
                 <[float64][Value][0.0]>
             >
 			

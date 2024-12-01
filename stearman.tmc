@@ -19,23 +19,23 @@
                 <[string8][Text][Stearman (Boeing) Model 75 to dwupłatowiec używany jako wojskowy samolot szkoleniowy, którego co najmniej 8 584 egzemplarze zostały zbudowane w Stanach Zjednoczonych w latach 30. i 40. ubiegłego wieku. Stearman Aircraft stał się spółką zależną Boeinga w 1934 roku. Powszechnie znany jako Stearman, Boeing Stearman lub Kaydet, służył jako podstawowy samolot szkoleniowy dla USAAF, USN (jako NS i N2S) oraz RCAF jako Kaydet przez całą II wojnę światową. W latach powojennych stały się popularne jako samoloty do opylania upraw, samoloty sportowe i akrobacyjne. Dla Aerofly FS4 wykonany przez Krzysztofa Kaniewskiego, oryginalny model 3D stworzony przez Paolo Matricardi.]>
 			>
         >
-		<[float64][WingSpan][10.2]>
-		<[float64][MaximumAirspeed][58.5]>
-		<[float64][MaximumSpeed][58.5]>
-		<[float64][MinimumAirspeed][24.0]>
-        <[float64][ApproachAirspeed][28.3]>
-        <[float64][CruiseAirspeed][42.5]>
-        <[float64][CruiseSpeed][58.5]>
-		<[vector2_float64][NormalAirspeedRange][ 24.0 50.5 ]>
+        <[float64][MaximumTakeoffMass][1200.0]>
+		<[float64][WingSpan]          [10.2]>
+        <[uint32] [Year]              [1932]>
+        <[uint32] [UnitsBuilt]        [10620]>
+        <[uint32] [EngineCount]       [1]>
+        <[float64][EnginePower]       [164000.0]>
+		<[float64][MaximumAirspeed]   [58.5]>
+		<[float64][MaximumSpeed]      [58.5]>
+		<[float64][MinimumAirspeed]   [24.0]>
+        <[float64][ApproachAirspeed]  [28.3]>
+        <[float64][CruiseAirspeed]    [42.5]>
+        <[float64][CruiseSpeed]       [58.5]>
+        <[float64][MaximumAltitude]   [4024.0]>
+        <[float64][CruiseAltitude]    [1826.0]>
+        <[float64][MaximumRange]      [1085000.0]>
+		<[vector2_float64][NormalAirspeedRange] [ 24.0 50.5 ]>
 		<[vector2_float64][CautionAirspeedRange][ 50.5 58.5 ]>
-        <[float64][MaximumAltitude][4024 .0]>
-        <[float64][CruiseAltitude][1826.0]>
-        <[float64][MaximumTakeoffMass][1200 .0]>
-        <[float64][EnginePower][164000.0]>
-        <[float64][MaximumRange][1085000.0]>
-        <[uint32][UnitsBuilt][10620]>
-        <[uint32][EngineCount][1]>
-        <[uint32][Year][1932]>
         <[string8][Tags][ historical piston airplane trainer general_aviation gear tailgear ]>
         <[string8][Pilot][]>
     >
