@@ -279,7 +279,7 @@
                 <[string8][Body][LeftGear]>
                 <[tmvector3d][R0][0.7778 1.1986 -1.396]>
                 <[tmvector3d][Y0][0.0 0.998630 -0.052336]>
-                <[string8][InputBrake][LeftBrake.Output]>
+                <[string8][InputBrake][LeftBrakeMix.Output]>
                 <[float64][BrakeStrength][0.25]>
             >
             <[output][GroundRollSpeedLeft][]
@@ -323,7 +323,7 @@
                 <[string8][Body][RightGear]>
                 <[tmvector3d][R0][0.7778 -1.1986 -1.396]>
                 <[tmvector3d][Y0][0.0 0.998630 0.052336]>
-                <[string8][InputBrake][RightBrake.Output]>
+                <[string8][InputBrake][RightBrakeMix.Output]>
                 <[float64][BrakeStrength][0.25]>
             >
             <[output][GroundRollSpeedRight][]
@@ -1108,6 +1108,18 @@
             >
             // primary fight controls end
 
+            // parking brake
+            <[input_lever][ParkingBrakeInput][]
+                <[string8][Message][Controls.ParkingBrake]>
+            >
+            <[sender][SenderParkingBrake][]
+                <[string8][Input][ParkingBrakeInput.Output]>
+                <[string8][Message][Aircraft.ParkingBrake]>
+            >
+            <[output_free][ParkingBrakeInputOutput][]
+                <[string8][Input][ParkingBrakeInput.Output]>
+            >
+			
             // wheelbrake
             <[input_default][LeftBrakeInput][]
                 <[string8][Message][Controls.WheelBrake.Left]>
@@ -1147,18 +1159,13 @@
                 <[string8][Input][RightBrakePedal.Output]>
                 <[float64array][Coefficients][ 0.5 0.5 0.0 ]>
             >
-
-            // parking brake
-            <[input_switch][ParkingBrakeSwitch][]
-                <[string8][Message][Controls.ParkingBrake]>
-                <[string8][Events][ SwitchSound.Trigger ]>
-                <[string8][EventsRelease][ SwitchSound.Trigger ]>
-                <[float64][Value][1.0]>
+            <[maximum][LeftBrakeMix][]
+                <[string8][Inputs][ LeftBrake.Output ParkingBrakeInput.Output ]>
             >
-            <[output_free][ParkingBrakeSwitchOutput][]
-                <[string8][Input][ParkingBrakeSwitch.Output]>
+            <[maximum][RightBrakeMix][]
+                <[string8][Inputs][ RightBrake.Output ParkingBrakeInput.Output ]>
             >
-
+			
             // gear end
 
             // electricity start
@@ -1375,7 +1382,7 @@
                 <[string8][Set][0]>
             >
             <[product][DoorInput][]
-                <[string8][Inputs][EngineStop.Output SpeedZero.Output]>
+                <[string8][Inputs][EngineStop.Output SpeedZero.Output ParkingBrakeInput.Output]>
             >
             <[servolinear][ServoDoor][]
                 <[string8][Input][DoorInput.Output]>
@@ -2012,7 +2019,70 @@
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
+			
+			// switches
 
+            <[hingedbodygraphics][NavLightPilotSwitch][]
+                <[string8][GeometryList][ SwNavLightPilot ]>
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[string8][InputID][NavigationLightSwitch.Output]>
+                <[tmvector3d][Axis][ 0 1 0 ]>
+                <[tmvector3d][Pivot][-0.6061 -0.2780 0.2287]>
+                <[float64][Scaling][0.8]>
+                <[float64][Offset][-0.6]>
+            >
+            <[hingedbodygraphics][BatteryPilotSwitch][]
+                <[string8][GeometryList][ SwBatteryPilot ]>
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[string8][InputID][MasterBatterySwitch.Output]>
+                <[tmvector3d][Axis][ 0 1 0 ]>
+                <[tmvector3d][Pivot][-0.6061 -0.2780 0.1224]>
+                <[float64][Scaling][0.8]>
+                <[float64][Offset][-0.6]>
+            >
+            <[hingedbodygraphics][StarterPilotSwitch][]
+                <[string8][GeometryList][ SwStarterPilot ]>
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[string8][InputID][StarterPressed.Output]>
+                <[tmvector3d][Axis][ 0 1 0 ]>
+                <[tmvector3d][Pivot][-0.6061 -0.2368 0.1224]>
+                <[float64][Scaling][0.8]>
+                <[float64][Offset][-0.6]>
+            >
+            <[hingedbodygraphics][NavLightCopilotSwitch][]
+                <[string8][GeometryList][ SwNavLightCopilot ]>
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[string8][InputID][NavigationLightSwitch.Output]>
+                <[tmvector3d][Axis][ 0 1 0 ]>
+                <[tmvector3d][Pivot][0.2581 -0.2780 0.2303]>
+                <[float64][Scaling][0.8]>
+                <[float64][Offset][-0.6]>
+            >
+            <[hingedbodygraphics][BatteryCopilotSwitch][]
+                <[string8][GeometryList][ SwBatteryCopilot ]>
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[string8][InputID][MasterBatterySwitch.Output]>
+                <[tmvector3d][Axis][ 0 1 0 ]>
+                <[tmvector3d][Pivot][0.2581 -0.2780 0.1240]>
+                <[float64][Scaling][0.8]>
+                <[float64][Offset][-0.6]>
+            >
+            <[hingedbodygraphics][StarterCopilotSwitch][]
+                <[string8][GeometryList][ SwStarterCopilot ]>
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[string8][InputID][StarterPressed.Output]>
+                <[tmvector3d][Axis][ 0 1 0 ]>
+                <[tmvector3d][Pivot][0.2581 -0.2368 0.1240]>
+                <[float64][Scaling][0.8]>
+                <[float64][Offset][-0.6]>
+            >		
+			
 			// magnetto knob
             <[graphics_input][MagnetoLeverInput][]
                 <[uint32][InputID][MagnetoLever.Output]>
@@ -2089,28 +2159,25 @@
             >
 
 			// parkbrake lever
-            <[graphics_input][ParkingBrakeInput][]
-                <[uint32][InputID][ParkingBrakeSwitch.Output]>
-            >
-            <[graphics_linear_interpolation][ParkingBrakeMapping][]
-                <[string8][Input][ParkingBrakeInput.Output]>
-                <[tmvector2d][Map][(0.0 0.622384) (1.0 0.010996)]>
-            >
             <[hingedbodygraphics][ParkingBrakePilot][]
                 <[string8][GeometryList][ StearmanCockpit736814 StearmanCockpit829814 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][Input][ParkingBrakeMapping.Output]>
+                <[uint32][InputID][ParkingBrakeInput.Output]>
                 <[tmvector3d][Axis][ 0.0 -1.0 0.0 ]>
                 <[tmvector3d][Pivot][-0.794590 -0.376880 -0.257412]>
+                <[float64][Scaling][-0.611388]>
+                <[float64][Offset][0.622384]>
             >
             <[hingedbodygraphics][ParkingBrakeCopilot][]
                 <[string8][GeometryList][ StearmanCockpit840014 ]> // StearmanCockpit933014
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][Input][ParkingBrakeMapping.Output]>
+                <[uint32][InputID][ParkingBrakeInput.Output]>
                 <[tmvector3d][Axis][ 0.0 -1.0 0.0 ]>
                 <[tmvector3d][Pivot][0.106320 -0.376880 -0.257412]>
+                <[float64][Scaling][-0.611388]>
+                <[float64][Offset][0.622384]>
             >
 
 			// pedals

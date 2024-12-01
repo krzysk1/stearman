@@ -17,10 +17,14 @@ Aerofly FS1, Aerofly FS2 and Aerofly FS 4 adaptation: Krzysztof Kaniewski
 1. Delete the folder "stearman".
 
 # Tip 
-To open engine door switch off magneto on the ground (air speed must be zero)
+To open engine door switch off magneto on the ground and set parking brake (air speed must be zero)
 
 # Resources
 
 Aircraft Technical Data & Specifications: http://www.airliners.net/aircraft-data/boeing-stearman/85 
 
 https://www.brownsbiplanerides.com/pt-17-stearman
+
+# Added Liveries
+Israelic Camo	By Leen de Jager
+Sylvester&Tweety	By Leen de Jager
