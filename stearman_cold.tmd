@@ -29,9 +29,6 @@
             <[input_switch][NavigationLightSwitch][]
                 <[float64][Value][0.0]>
             >
-            <[input_switch][LandingLightSwitch][]
-                <[float64][Value][0.0]>
-            >
         >
     >
 >

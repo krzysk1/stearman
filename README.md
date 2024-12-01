@@ -22,3 +22,5 @@ To open engine door switch off magneto on the ground (air speed must be zero)
 # Resources
 
 Aircraft Technical Data & Specifications: http://www.airliners.net/aircraft-data/boeing-stearman/85 
+
+https://www.brownsbiplanerides.com/pt-17-stearman

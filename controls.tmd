@@ -7,7 +7,7 @@
 			//barometer_setting
             <[control_cylinder][PilotPressureSetting][0]
                 <[string8][Type][knob]>
-                <[vector3_float64][R0][-0.6085 0.2345 0.2513]>
+                <[vector3_float64][R0][-0.6123 0.2361 0.2523]>
                 <[matrix3_float64][B0][1 0 0  0 1 0  0 0 1]>
                 <[vector3_float64][Direction] [ 1.0 0.0 0.0 ]>
                 <[float64][StepAngle][0.1]>
@@ -256,26 +256,12 @@
 			// switches
             <[control_cylinder][PilotEngineStarter][7]
                 <[string8][Type][button]>
-                <[vector3_float64][R0][-0.6913 -0.2740 0.06522]>
+                <[vector3_float64][R0][-0.6204 -0.2368 0.1282]>
                 <[matrix3_float64][B0][1 0 0  0 1 0  0 0 1]>
                 <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
                 <[control_message][OnPush][]
                     <[string8][Message][Controls.Starter1]>
                     <[string8][Qualifiers][event]>
-                    <[float64][Value][1.0]>
-                >
-                <[float64][Radius][0.02]>
-                <[float64][Length][0.05]>
-            >
-            <[control_cylinder][PilotAvionicsMaster][8]
-                <[string8][Type][switch toggle]>
-                <[vector3_float64][R0][-0.6204 -0.2368 0.1282 ]>
-                <[matrix3_float64][B0][1 0 0  0 1 0  0 0 1]>
-                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
-                <[float64][StepDistance][0.01]>
-                <[control_message][OnStep][]
-                    <[string8][Message][Electrical.Avionics]>
-                    <[string8][Qualifiers][step]>
                     <[float64][Value][1.0]>
                 >
                 <[float64][Radius][0.02]>
@@ -315,7 +301,7 @@
 			//barometer_setting
             <[control_cylinder][CopilotPressureSetting][11]
                 <[string8][Type][knob]>
-                <[vector3_float64][R0][0.2584 0.2345 0.2513]>
+                <[vector3_float64][R0][0.2505 0.2361 0.2523]>
                 <[matrix3_float64][B0][1 0 0  0 1 0  0 0 1]>
                 <[vector3_float64][Direction] [ 1.0 0.0 0.0 ]>
                 <[float64][StepAngle][0.1]>
@@ -335,7 +321,7 @@
             >
             <[control_sphere][CopilotMagnetosKnob][12]
                 <[string8][Type][lever]>
-                <[vector3_float64][R0][0.2584 0.2785  0.1902]>
+                <[vector3_float64][R0][0.2584 0.2785 0.1902]>
                 <[matrix3_float64][B0][1 0 0 0 1 0 0 0 1]>
                 <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
                 <[float64][StepDistance][0.02]>
@@ -526,26 +512,12 @@
 			// switches
             <[control_cylinder][CopilotEngineStarter][19]
                 <[string8][Type][button]>
-                <[vector3_float64][R0][0.2438 -0.2740 0.06522]>
+                <[vector3_float64][R0][0.2438 -0.2368 0.1282]>
                 <[matrix3_float64][B0][1 0 0  0 1 0  0 0 1]>
                 <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
                 <[control_message][OnPush][]
                     <[string8][Message][Controls.Starter1]>
                     <[string8][Qualifiers][event]>
-                    <[float64][Value][1.0]>
-                >
-                <[float64][Radius][0.02]>
-                <[float64][Length][0.05]>
-            >
-            <[control_cylinder][CopilotAvionicsMaster][20]
-                <[string8][Type][switch toggle]>
-                <[vector3_float64][R0][0.2438 -0.2368 0.1282 ]>
-                <[matrix3_float64][B0][1 0 0  0 1 0  0 0 1]>
-                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
-                <[float64][StepDistance][0.01]>
-                <[control_message][OnStep][]
-                    <[string8][Message][Electrical.Avionics]>
-                    <[string8][Qualifiers][step]>
                     <[float64][Value][1.0]>
                 >
                 <[float64][Radius][0.02]>
