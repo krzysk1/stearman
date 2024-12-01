@@ -1190,12 +1190,6 @@
                 <[string8][EventsRelease][ SwitchSound.Trigger ]>
                 <[float64][Value][1.0]>
             >
-            <[logic_invert][NavigationLightOffSwitch][]
-                <[string8][Input][NavigationLightSwitch.Output]>
-            >
-            <[output_free][NavigationLightOffSwitchOutput][]
-                <[string8][Input][NavigationLightOffSwitch.Output]>
-            >
             <[electrical_load][NavigationLights][]
                 <[string8][InputEnable][NavigationLightSwitch.Output]>
                 <[string8][InputVoltage][MainBus.Output]>
@@ -1492,7 +1486,7 @@
 
             // navigation lights
             <[graphics_input][NavigationLights][]
-                <[uint32][InputID][NavigationLightOffSwitch.Output]>
+                <[uint32][InputID][NavigationLightSwitch.Output]>
             >
             <[graphics_pointlight][LeftWingTipLight][]
                 <[uint32][PositionID][UpperWing.R]>
@@ -1571,7 +1565,7 @@
             >
             <[graphics_rotation][RudderRotate][]
                 <[string8][Input][RudderMapping.Output]>
-                <[tmvector3d][Axis][ 0.0 0.0 -1.0 ]>
+                <[tmvector3d][Axis][ 0.0 0.0 1.0 ]>
                 <[tmvector3d][Pivot][-4.476075 -0.000007 0.691939]>
             >
             <[graphics_pointlight][TailLight][]
