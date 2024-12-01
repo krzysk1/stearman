@@ -50,11 +50,10 @@
                 <[uint32][InputID][ServoThrottle.Output]>
                 <[float64][Scaling][-0.610866]>
                 <[float64][Offset][1.047198]>
-//                <[tmvector2d][Map][(0.0 1.047198) (1.0 0.436332)]>
             >
             <[control_rotation][PilotThrottleTranslation][]
                 <[string8][Input][ThrottleLeverInput.Output]>
-                <[tmvector3d][Axis][0.0 1.0 0.0]>
+                <[tmvector3d][Axis][0.0 -1.0 0.0]>
                 <[tmvector3d][Pivot][-0.629950 1.080350 0.077099]>
             >
             <[control_sphere][PilotThrottleLever][]
@@ -89,12 +88,11 @@
                 <[uint32][InputID][MixtureLever.Output]>
                 <[float64][Scaling][-0.785398]>
                 <[float64][Offset][1.308997]>
-//                 <[tmvector2d][Map][(0.0 1.308997) (1.0 0.523599)]>
             >
             <[control_rotation][PilotMixtureTranslation][]
                 <[string8][Input][MixtureLeverInput.Output]>
-                <[tmvector3d][Axis][0.0 1.0 0.0]>
-                <[tmvector3d][Pivot][-0.633710 1.030160 0.073190]>
+                <[tmvector3d][Axis][0.0 -1.0 0.0]>
+                <[tmvector3d][Pivot][-0.633710 1.030160 0.073190]> 
             >
             <[control_sphere][PilotMixtureLeverKnob][]
                 <[string8][Type][lever]>
@@ -106,7 +104,7 @@
                 <[control_message][OnStep][]
                     <[string8][Message][Controls.Mixture1]>
                     <[string8][Qualifiers][step]>
-                    <[float64][Value][0.01]>
+                    <[float64][Value][0.1]>
                 >
                 <[float64][Radius][0.02]>
             >
@@ -119,20 +117,19 @@
                 <[control_message][OnStep][]
                     <[string8][Message][Controls.Mixture1]>
                     <[string8][Qualifiers][step]>
-                    <[float64][Value][0.01]>
+                    <[float64][Value][0.1]>
                 >
                 <[vector3_float64][Dimensions][ 0.033 0.018 0.033 ]>
             >
 			// parking brake
             <[control_input][ParkBrakeInput][2]
-                <[uint32][InputID][ParkingBrakeSwitch.Output]>
+                <[uint32][InputID][ParkingBrakeInput.Output]>
                 <[float64][Scaling][-0.611388]>
                 <[float64][Offset][0.622384]>
-//                <[tmvector2d][Map][(0.0 0.622384) (1.0 0.010996)]>
             >
             <[control_rotation][PilotBrakeHandleRotation][2]
                 <[string8][Input][ParkBrakeInput.Output]>
-                <[tmvector3d][Axis][0.0 1.0 0.0]>
+                <[tmvector3d][Axis][0.0 -1.0 0.0]>
                 <[tmvector3d][Pivot][-0.794590 -0.376880 -0.257412]>
             >
             <[control_sphere][PilotParkingbrakeLever][2]
@@ -177,11 +174,10 @@
                 <[uint32][InputID][CarburettorHeatLever.Output]>
                 <[float64][Scaling][0.610865]>
                 <[float64][Offset][-0.785398]>
-//                <[tmvector2d][Map][(0.0 -0.785398) (1.0 -0.174533)]>
             >
             <[control_rotation][PilotCarburettorHeatLeverTransform][]
                 <[string8][Input][CarburettorHeatLeverMapping.Output]>
-                <[tmvector3d][Axis][-0.000163 1.0 -0.000005]>
+                <[tmvector3d][Axis][0.0 -1.0 0.0]>
                 <[tmvector3d][Pivot][-0.617580 -0.285126 0.064877]>
             >
             <[control_cylinder][PilotCarburettorHeatLever][14]
@@ -256,7 +252,7 @@
 			// switches
             <[control_cylinder][PilotEngineStarter][7]
                 <[string8][Type][button]>
-                <[vector3_float64][R0][-0.6204 -0.2368 0.1282]>
+                <[vector3_float64][R0][-0.6204 -0.2368 0.1282]> 
                 <[matrix3_float64][B0][1 0 0  0 1 0  0 0 1]>
                 <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
                 <[control_message][OnPush][]
@@ -269,7 +265,7 @@
             >
             <[control_cylinder][PilotMasterBattery][9]
                 <[string8][Type][switch toggle]>
-                <[vector3_float64][R0][-0.6204 -0.2780  0.1282]>
+                <[vector3_float64][R0][-0.6204 -0.2780 0.1282]>
                 <[matrix3_float64][B0][1 0 0  0 1 0  0 0 1]>
                 <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
                 <[float64][StepDistance][0.01]>
@@ -336,12 +332,12 @@
 			//throttle lever
             <[control_rotation][CopilotThrottleTranslation][]
                 <[string8][Input][ThrottleLeverInput.Output]>
-                <[tmvector3d][Axis][0.0 1.0 0.0]>
+                <[tmvector3d][Axis][0.0 -1.0 0.0]>
                 <[tmvector3d][Pivot][0.231530 1.080350 0.067534]>
             >
             <[control_sphere][CopilotThrottleLever][]
                 <[string8][Type][lever]>
-                <[vector3_float64][R0][0.2317 0.3084 0.1916]>
+                <[vector3_float64][R0][0.2317 0.3084 0.1820]>  
                 <[matrix3_float64][B0][1 0 0 0 1 0 0 0 1]>
                 <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
                 <[float64][StepDistance][0.0014]>
@@ -369,12 +365,12 @@
 			// mixture lever
             <[control_rotation][CopilotMixtureTranslation][]
                 <[string8][Input][MixtureLeverInput.Output]>
-                <[tmvector3d][Axis][0.0 1.0 0.0]>
+                <[tmvector3d][Axis][0.0 -1.0 0.0]>
                 <[tmvector3d][Pivot][0.227770 1.030160 0.063625]>
             >
             <[control_sphere][CopilotMixtureLeverKnob][]
                 <[string8][Type][lever]>
-                <[vector3_float64][R0][0.2317 0.257 0.1916]>
+                <[vector3_float64][R0][0.2317 0.2569  0.1820]>
                 <[matrix3_float64][B0][1 0 0 0 1 0 0 0 1]>
                 <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
                 <[float64][StepDistance][0.0014]>
@@ -382,7 +378,7 @@
                 <[control_message][OnStep][]
                     <[string8][Message][Controls.Mixture1]>
                     <[string8][Qualifiers][step]>
-                    <[float64][Value][0.01]>
+                    <[float64][Value][0.1]>
                 >
                 <[float64][Radius][0.02]>
             >
@@ -395,23 +391,23 @@
                 <[control_message][OnStep][]
                     <[string8][Message][Controls.Mixture1]>
                     <[string8][Qualifiers][step]>
-                    <[float64][Value][0.01]>
+                    <[float64][Value][0.1]>
                 >
                 <[vector3_float64][Dimensions][ 0.033 0.018 0.033 ]>
             >
 			// parking brake
             <[control_rotation][CopilotBrakeHandleRotation][]
                 <[string8][Input][ParkBrakeInput.Output]>
-                <[tmvector3d][Axis][0.0 1.0 0.0]>
+                <[tmvector3d][Axis][0.0 -1.0 0.0]>
                 <[tmvector3d][Pivot][0.106320 -0.376880 -0.257412]>
             >
             <[control_sphere][CopilotParkingbrakeLever][]
                 <[string8][Type][lever toggle]>
-                <[vector3_float64][R0][0.03171 -0.3774 -0.1682]>
+                <[vector3_float64][R0][0.09344 -0.3774 -0.1682]>
                 <[matrix3_float64][B0][1 0 0 0 1 0 0 0 1]>
                 <[vector3_float64][Direction][ -1.0 0.0 0.0 ]>
                 <[float64][StepDistance][0.04]>
-                <[string8][InputTransform][PilotBrakeHandleRotation.Output]>
+                <[string8][InputTransform][CopilotBrakeHandleRotation.Output]>
                 <[control_message][OnStep][]
                     <[string8][Message][Controls.ParkingBrake]>
                     <[string8][Qualifiers][step]>
@@ -445,7 +441,7 @@
 			// carburettor heat lever
             <[control_rotation][CopilotCarburettorHeatLeverTransform][]
                 <[string8][Input][CarburettorHeatLeverMapping.Output]>
-                <[tmvector3d][Axis][-0.000163 1.0 -0.000005]>
+                <[tmvector3d][Axis][0.0 -1.0 0.0]>
                 <[tmvector3d][Pivot][0.259880 -0.285126 0.064877]>
             >
             <[control_cylinder][CopilotCarburettorHeatLever][16]

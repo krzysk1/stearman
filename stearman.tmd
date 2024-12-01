@@ -342,7 +342,7 @@
             <[aerofuselage][EngineAero][]
                 <[string8][Body][Fuselage]>
                 <[float64][StationX][ 2.37 2.1610 2.094 2.0328 1.955 1.7178 1.6384 ]>
-                <[float64][StationY][ 0.0 0.0 0.0 0.0 0.0 0.0 0.0  ]>
+                <[float64][StationY][ 0.0 0.0 0.0 0.0 0.0 0.0 0.0 ]>
                 <[float64][StationZ][ -0.0032 -0.0032 -0.0032 -0.0032 -0.0032 -0.0032 -0.0032 ]>
                 <[float64][StationWidth][ 0.076 0.076 0.193 0.572 1.06 1.06 0.63 ]>
                 <[float64][StationHeight][ 0.076 0.076 0.193 0.572 1.06 1.06 0.63 ]>
@@ -916,7 +916,7 @@
             <[input_lever][MixtureInput][]
                 <[string8][Message][Controls.Mixture1]>
                 <[tmvector2d][Range][0.0 1.0]>
-                <[uint][Positions][101]>
+                <[uint][Positions][21]>
                 <[float64][Value][1.0]>
             >
             <[servoclassic][MixtureLever][]
@@ -1119,7 +1119,7 @@
             <[output_free][ParkingBrakeInputOutput][]
                 <[string8][Input][ParkingBrakeInput.Output]>
             >
-			
+
             // wheelbrake
             <[input_default][LeftBrakeInput][]
                 <[string8][Message][Controls.WheelBrake.Left]>
@@ -1165,7 +1165,7 @@
             <[maximum][RightBrakeMix][]
                 <[string8][Inputs][ RightBrake.Output ParkingBrakeInput.Output ]>
             >
-			
+
             // gear end
 
             // electricity start
@@ -2009,11 +2009,11 @@
 			// cockpit start
 
             <[rigidbodygraphics][Cockpit_450_14][]
-                <[string8][GeometryList][  StearmanCockpit102014 StearmanCockpit241214 StearmanCockpit555014 StearmanCockpit415814 StearmanCockpit730214 StearmanCockpit833414 StearmanCockpit1242614 StearmanCockpit1242615 StearmanCockpit1293014 StearmanCockpit1394414 ]>
+                <[string8][GeometryList][ StearmanCockpit102014 StearmanCockpit241214 StearmanCockpit555014 StearmanCockpit415814 StearmanCockpit730214 StearmanCockpit833414 StearmanCockpit1242614 StearmanCockpit1242615 StearmanCockpit1293014 StearmanCockpit1394414 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
-			
+
 			// switches
 
             <[hingedbodygraphics][NavLightPilotSwitch][]
@@ -2075,8 +2075,8 @@
                 <[tmvector3d][Pivot][0.2581 -0.2368 0.1240]>
                 <[float64][Scaling][0.8]>
                 <[float64][Offset][-0.6]>
-            >		
-			
+            >
+
 			// magnetto knob
             <[graphics_input][MagnetoLeverInput][]
                 <[uint32][InputID][MagnetoLever.Output]>
@@ -2101,7 +2101,7 @@
                 <[tmvector3d][Axis][ 0.999999 0.001062 0.000777 ]>
                 <[tmvector3d][Pivot][0.2510 0.2783 0.2022]>
             >
-			
+
 			//throttle lever
             <[hingedbodygraphics][ThrottleLeverCopilot][]
                 <[string8][GeometryList][ StearmanCockpit108614 ]>
