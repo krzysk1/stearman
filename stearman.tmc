@@ -15,6 +15,18 @@
                 <[string8][Text][Die Stearman (Boeing) Modell 75 ist ein Doppeldecker als Militärschulflugzeug eingesetzt, von denen mindestens 8,584 wurden in den Vereinigten Staaten in den 1930er und 1940er Jahren gebaut. Stearman Aircraft wurde ein Tochterunternehmen von Boeing im Jahr 1934 weithin als Stearman, Boeing Stearman oder Kaydet bekannt, diente sie als Schulflugzeug für die USAAF, die USN (wie der NS & N2S) und mit der RCAF als Kaydet Sprache in der Welt Krieg. In den ersten Nachkriegsjahren wurden sie beliebt als Spritzflugzeuge, Motormodelle und für Kunstflug. Hergestellt von Krzysztof Kaniewski 3D-Modell von Paolo Matricardi.]>
 			>
             <[localized_text][element][2]
+                <[string8u][Language][fr]>
+                <[string8][Text][Le Stearman (Boeing) Model 75 est un biplan utilisé comme avion d'entraînement militaire, dont au moins 8 584 exemplaires ont été construits aux États-Unis dans les années 1930 et 1940. Stearman Aircraft est devenue une filiale de Boeing en 1934. Largement connu sous les noms de Stearman, Boeing Stearman ou Kaydet, il a servi d'avion d'entraînement principal pour l'USAAF, l'USN (sous les noms NS et N2S) et la RCAF sous le nom de Kaydet pendant toute la Seconde Guerre mondiale. Dans les années qui ont suivi la guerre, il est devenu populaire comme avion agricole, avion de sport et pour la voltige aérienne. Pour Aerofly FS4, réalisé par Krzysztof Kaniewski, modèle 3D original créé par Paolo Matricardi.]>
+			>
+            <[localized_text][element][3]
+                <[string8u][Language][es]>
+                <[string8][Text][El Stearman (Boeing) Modelo 75 es un biplano utilizado como avión de entrenamiento militar, del que se fabricaron al menos 8584 unidades en Estados Unidos durante las décadas de 1930 y 1940. Stearman Aircraft se convirtió en una filial de Boeing en 1934. Ampliamente conocido como Stearman, Boeing Stearman o Kaydet, sirvió como avión de entrenamiento principal para la USAAF, la USN (como NS y N2S) y la RCAF como Kaydet durante la Segunda Guerra Mundial. En los años inmediatamente posteriores a la guerra, se hicieron populares como aviones fumigadores, aviones deportivos y para acrobacias aéreas. Para Aerofly FS4, creado por Krzysztof Kaniewski, modelo 3D original creado por Paolo Matricardi.]>
+			>
+            <[localized_text][element][4]
+                <[string8u][Language][it]>
+                <[string8][Text][Lo Stearman (Boeing) Model 75 è un biplano utilizzato come aereo da addestramento militare, di cui almeno 8.584 esemplari furono costruiti negli Stati Uniti negli anni '30 e '40. La Stearman Aircraft è diventata una filiale della Boeing nel 1934. Ampiamente conosciuto come Stearman, Boeing Stearman o Kaydet, è stato utilizzato come addestratore primario per l'USAAF, l'USN (come NS e N2S) e con la RCAF come Kaydet durante la seconda guerra mondiale. Nel primo dopoguerra divenne popolare come aereo agricolo, aereo sportivo e per acrobazie aeree. Per Aerofly FS4 realizzato da Krzysztof Kaniewski, modello 3D originale creato da Paolo Matricardi.]>
+			>
+            <[localized_text][element][5]
                 <[string8u][Language][pl]>
                 <[string8][Text][Stearman (Boeing) Model 75 to dwupłatowiec używany jako wojskowy samolot szkoleniowy, którego co najmniej 8 584 egzemplarze zostały zbudowane w Stanach Zjednoczonych w latach 30. i 40. ubiegłego wieku. Stearman Aircraft stał się spółką zależną Boeinga w 1934 roku. Powszechnie znany jako Stearman, Boeing Stearman lub Kaydet, służył jako podstawowy samolot szkoleniowy dla USAAF, USN (jako NS i N2S) oraz RCAF jako Kaydet przez całą II wojnę światową. W latach powojennych stały się popularne jako samoloty do opylania upraw, samoloty sportowe i akrobacyjne. Dla Aerofly FS4 wykonany przez Krzysztofa Kaniewskiego, oryginalny model 3D stworzony przez Paolo Matricardi.]>
 			>
@@ -34,6 +46,7 @@
         <[float64][MaximumAltitude]   [4024.0]>
         <[float64][CruiseAltitude]    [1826.0]>
         <[float64][MaximumRange]      [1085000.0]>
+        <[vector2_float64][FlapAirspeedRange]   [  0.0  0.0 ]>
 		<[vector2_float64][NormalAirspeedRange] [ 24.0 50.5 ]>
 		<[vector2_float64][CautionAirspeedRange][ 50.5 58.5 ]>
         <[string8][Tags][ historical piston airplane trainer general_aviation gear tailgear ]>
