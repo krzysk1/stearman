@@ -18,7 +18,6 @@
             // telemetry
             <[telemetry][Telemetry][]
                 <[string8][Body][Fuselage]>
-                <[tmvector3d][LookAtPosition][ 0.0 0.0 0.0 ]>
             >
             <[event_value][DEV0][]
             >
@@ -50,7 +49,7 @@
                 <[float64][Df][3.0]>
                 <[float64][Kt][0.08]>
                 <[float64][Dt][0.04]>
-                <[string8][Tags][cockpit pilot front]>
+                <[string8][Tags][cockpit copilot front]>
             >
 
             // cameras end
