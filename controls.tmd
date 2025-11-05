@@ -5,7 +5,7 @@
 		// Rear pilot cockpit
 
 			//barometer_setting
-            <[control_cylinder][PilotPressureSetting][0]
+            <[control_cylinder][PilotPressureSetting][]
                 <[string8][Type][knob]>
                 <[vector3_float64][R0][-0.6123 0.2361 0.2523]>
                 <[matrix3_float64][B0][1 0 0  0 1 0  0 0 1]>
@@ -31,7 +31,7 @@
                 <[tmvector3d][Axis][-0.999999 -0.001062 -0.000777]>
                 <[tmvector3d][Pivot][-0.628000 0.279225 0.200311]>
             >
-            <[control_sphere][PilotMagnetosLever][1]
+            <[control_sphere][PilotMagnetosLever][]
                 <[string8][Type][lever]>
                 <[vector3_float64][R0][-0.6105 0.2785  0.1902]>
                 <[matrix3_float64][B0][1 0 0 0 1 0 0 0 1]>
@@ -70,7 +70,7 @@
                 >
                 <[float64][Radius][0.02]>
             >
-            <[control_box][PilotThrottleBase][2]
+            <[control_box][PilotThrottleBase][]
                 <[string8][Type][lever base]>
                 <[vector3_float64][R0][ -0.6297 0.3084 0.1916 ]>
                 <[matrix3_float64][B0][1 0 0 0 1 0 0 0 1]>
@@ -108,7 +108,7 @@
                 >
                 <[float64][Radius][0.02]>
             >
-            <[control_box][PilotMixtureBase][3]
+            <[control_box][PilotMixtureBase][]
                 <[string8][Type][lever base]>
                 <[vector3_float64][R0][ -0.6297 0.257 0.1916 ]>
                 <[matrix3_float64][B0][1 0 0 0 1 0 0 0 1]>
@@ -122,17 +122,17 @@
                 <[vector3_float64][Dimensions][ 0.033 0.018 0.033 ]>
             >
 			// parking brake
-            <[control_input][ParkBrakeInput][2]
+            <[control_input][ParkBrakeInput][]
                 <[uint32][InputID][ParkingBrakeInput.Output]>
                 <[float64][Scaling][-0.611388]>
                 <[float64][Offset][0.622384]>
             >
-            <[control_rotation][PilotBrakeHandleRotation][2]
+            <[control_rotation][PilotBrakeHandleRotation][]
                 <[string8][Input][ParkBrakeInput.Output]>
                 <[tmvector3d][Axis][0.0 -1.0 0.0]>
                 <[tmvector3d][Pivot][-0.794590 -0.376880 -0.257412]>
             >
-            <[control_sphere][PilotParkingbrakeLever][2]
+            <[control_sphere][PilotParkingbrakeLever][]
                 <[string8][Type][lever toggle]>
                 <[vector3_float64][R0][-0.8075 -0.3774 -0.1682]>
                 <[matrix3_float64][B0][1 0 0 0 1 0 0 0 1]>
@@ -151,7 +151,7 @@
 				>
                 <[float64][Radius][0.033]>
             >
-            <[control_box][PilotParkingbrakeBase][4]
+            <[control_box][PilotParkingbrakeBase][]
                 <[string8][Type][lever toggle base]>
                 <[vector3_float64][R0][ -0.8075 -0.3774 -0.1682 ]>
                 <[matrix3_float64][B0][1 0 0 0 1 0 0 0 1]>
@@ -180,7 +180,7 @@
                 <[tmvector3d][Axis][0.0 -1.0 0.0]>
                 <[tmvector3d][Pivot][-0.617580 -0.285126 0.064877]>
             >
-            <[control_cylinder][PilotCarburettorHeatLever][14]
+            <[control_cylinder][PilotCarburettorHeatLever][]
                 <[string8][Type][lever]>
                 <[vector3_float64][R0][-0.6913 -0.2740 0.06522]>
                 <[matrix3_float64][B0][1 0 0  0 1 0  0 0 1]>
@@ -195,7 +195,7 @@
                 <[float64][Radius][0.0133]>
                 <[float64][Length][0.0266]>
             >
-            <[control_box][PilotCarburettorHeatBase][5]
+            <[control_box][PilotCarburettorHeatBase][]
                 <[string8][Type][lever base]>
                 <[vector3_float64][R0][ -0.6913 -0.2740 0.06522 ]>
                 <[matrix3_float64][B0][1 0 0 0 1 0 0 0 1]>
@@ -228,7 +228,7 @@
                 <[tmvector3d][Pivot][ -0.860030 -0.003245 -0.355681 ]>
                 <[string8][InputTransform][PilotElevatorTransform.Output]>
             >
-            <[control_cylinder][PilotStickGrip][6]
+            <[control_cylinder][PilotStickGrip][]
                 <[string8][Type][stick]>
                 <[vector3_float64][R0][ -0.8553  -0.00312  0.1348 ]>
                 <[matrix3_float64][B0][ 0.0 0.0 1.0  0.0 1.0 0.0  -1.0 0.0 0.0 ]>
@@ -250,7 +250,7 @@
                 <[float64][Length][0.13]>
             >
 			// switches
-            <[control_cylinder][PilotEngineStarter][7]
+            <[control_cylinder][PilotEngineStarter][]
                 <[string8][Type][button]>
                 <[vector3_float64][R0][-0.6204 -0.2368 0.1282]> 
                 <[matrix3_float64][B0][1 0 0  0 1 0  0 0 1]>
@@ -263,7 +263,7 @@
                 <[float64][Radius][0.02]>
                 <[float64][Length][0.05]>
             >
-            <[control_cylinder][PilotMasterBattery][9]
+            <[control_cylinder][PilotMasterBattery][]
                 <[string8][Type][switch toggle]>
                 <[vector3_float64][R0][-0.6204 -0.2780 0.1282]>
                 <[matrix3_float64][B0][1 0 0  0 1 0  0 0 1]>
@@ -277,7 +277,7 @@
                 <[float64][Radius][0.02]>
                 <[float64][Length][0.05]>
             >
-            <[control_cylinder][PilotNavigationLightSwitch][10]
+            <[control_cylinder][PilotNavigationLightSwitch][]
                 <[string8][Type][switch toggle]>
                 <[vector3_float64][R0][ -0.6204 -0.2780 0.2345 ]>
                 <[matrix3_float64][B0][1 0 0  0 1 0  0 0 1]>
@@ -295,7 +295,7 @@
 		// Front copilot cockpit
 
 			//barometer_setting
-            <[control_cylinder][CopilotPressureSetting][11]
+            <[control_cylinder][CopilotPressureSetting][]
                 <[string8][Type][knob]>
                 <[vector3_float64][R0][0.2505 0.2361 0.2523]>
                 <[matrix3_float64][B0][1 0 0  0 1 0  0 0 1]>
@@ -315,7 +315,7 @@
                 <[tmvector3d][Axis][-0.999999 -0.001062 -0.000777]>
                 <[tmvector3d][Pivot][0.2584 0.279225 0.200311]>
             >
-            <[control_sphere][CopilotMagnetosKnob][12]
+            <[control_sphere][CopilotMagnetosKnob][]
                 <[string8][Type][lever]>
                 <[vector3_float64][R0][0.2584 0.2785 0.1902]>
                 <[matrix3_float64][B0][1 0 0 0 1 0 0 0 1]>
@@ -349,7 +349,7 @@
                 >
                 <[float64][Radius][0.02]>
             >
-            <[control_box][CopilotThrottleBase][13]
+            <[control_box][CopilotThrottleBase][]
                 <[string8][Type][lever base]>
                 <[vector3_float64][R0][ 0.2317 0.3084 0.1916 ]>
                 <[matrix3_float64][B0][1 0 0 0 1 0 0 0 1]>
@@ -382,7 +382,7 @@
                 >
                 <[float64][Radius][0.02]>
             >
-            <[control_box][CopilotMixtureBase][14]
+            <[control_box][CopilotMixtureBase][]
                 <[string8][Type][lever base]>
                 <[vector3_float64][R0][ 0.2317 0.257 0.1916 ]>
                 <[matrix3_float64][B0][1 0 0 0 1 0 0 0 1]>
@@ -420,7 +420,7 @@
 				>
                 <[float64][Radius][0.033]>
             >
-            <[control_box][CopilotParkingbrakeBase][15]
+            <[control_box][CopilotParkingbrakeBase][]
                 <[string8][Type][lever toggle base]>
                 <[vector3_float64][R0][ 0.03171 -0.3774 -0.1682 ]>
                 <[matrix3_float64][B0][1 0 0 0 1 0 0 0 1]>
@@ -444,7 +444,7 @@
                 <[tmvector3d][Axis][0.0 -1.0 0.0]>
                 <[tmvector3d][Pivot][0.259880 -0.285126 0.064877]>
             >
-            <[control_cylinder][CopilotCarburettorHeatLever][16]
+            <[control_cylinder][CopilotCarburettorHeatLever][]
                 <[string8][Type][lever]>
                 <[vector3_float64][R0][0.1862 -0.2740 0.06522]>
                 <[matrix3_float64][B0][1 0 0  0 1 0  0 0 1]>
@@ -459,7 +459,7 @@
                 <[float64][Radius][0.0133]>
                 <[float64][Length][0.0266]>
             >
-            <[control_box][CopilotCarburettorHeatBase][17]
+            <[control_box][CopilotCarburettorHeatBase][]
                 <[string8][Type][lever base]>
                 <[vector3_float64][R0][ 0.1862 -0.2740 0.06522 ]>
                 <[matrix3_float64][B0][1 0 0 0 1 0 0 0 1]>
@@ -484,7 +484,7 @@
                 <[tmvector3d][Pivot][ 0.001420 -0.003250 -0.355681 ]>
                 <[string8][InputTransform][CopilotElevatorTransform.Output]>
             >
-            <[control_cylinder][CopilotStickGrip][18]
+            <[control_cylinder][CopilotStickGrip][]
                 <[string8][Type][stick]>
                 <[vector3_float64][R0][ 0.006165 -0.003320 0.1348 ]>
                 <[matrix3_float64][B0][ 0.0 0.0 1.0  0.0 1.0 0.0  -1.0 0.0 0.0 ]>
@@ -506,7 +506,7 @@
                 <[float64][Length][0.13]>
             >
 			// switches
-            <[control_cylinder][CopilotEngineStarter][19]
+            <[control_cylinder][CopilotEngineStarter][]
                 <[string8][Type][button]>
                 <[vector3_float64][R0][0.2438 -0.2368 0.1282]>
                 <[matrix3_float64][B0][1 0 0  0 1 0  0 0 1]>
@@ -519,7 +519,7 @@
                 <[float64][Radius][0.02]>
                 <[float64][Length][0.05]>
             >
-            <[control_cylinder][CopilotMasterBattery][21]
+            <[control_cylinder][CopilotMasterBattery][]
                 <[string8][Type][switch toggle]>
                 <[vector3_float64][R0][0.2438 -0.2780  0.1282]>
                 <[matrix3_float64][B0][1 0 0  0 1 0  0 0 1]>
@@ -533,7 +533,7 @@
                 <[float64][Radius][0.02]>
                 <[float64][Length][0.05]>
             >
-            <[control_cylinder][CopilotNavigationLightSwitch][22]
+            <[control_cylinder][CopilotNavigationLightSwitch][]
                 <[string8][Type][switch toggle]>
                 <[vector3_float64][R0][ 0.2438 -0.2780 0.2345 ]>
                 <[matrix3_float64][B0][1 0 0  0 1 0  0 0 1]>
@@ -550,4 +550,3 @@
         >
     >
 >
-
