@@ -3,13 +3,13 @@
         <[pointer_list_tmuniverse][DynamicObjects][]
 
             // engine
-            <[input_lever][ThrottleInput][60]
-                <[float64][Value][0.168739323242838]>
+            <[input_lever][ThrottleInput][]
+                <[float64][Value][0.16]>
             >
-            <[servoclassic][ThrottleLever][61]
-                <[float64][Position][0.168739323242838]>
+            <[servoclassic][ThrottleLever][]
+                <[float64][Position][0.16]>
             >
-            <[multibody_joint][PropellerJoint][63]
+            <[multibody_joint][PropellerJoint][]
                 <[float64][InitialVelocity][116.0]>
             >
             <[input_lever][Mixture][]
@@ -24,18 +24,18 @@
             <[input_switch][MasterBatterySwitch][]
                 <[float64][Value][1.0]>
             >
-			
+
             // trim
-            <[input_default][PitchTrim][102]
+            <[input_default][PitchTrim][]
                 <[float64][Value][-0.9]>
             >
-            <[input_default][RudderTrimInput][102]
-                <[float64][Value][0.145025384081254]>
+            <[input_default][RudderTrimInput][]
+                <[float64][Value][0.145]>
             >
 
             // fuel display
             <[servoclassic][FuelDisplay][]
-                <[float64][Position][0.774294014905655]>
+                <[float64][Position][0.77]>
             >
             <[input_binary][TailWheelReleaseInput][]
                 <[float64][Value][0.0]>
@@ -45,7 +45,7 @@
             >
 
             // lights
-            <[input_switch][NavigationLightSwitch][0]
+            <[input_switch][NavigationLightSwitch][]
                 <[float64][Value][1.0]>
             >
         >
